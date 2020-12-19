@@ -75,55 +75,23 @@
 			</parameter>
 		</parameters>
 	</function>
-	<constant name="BADGE" c:identifier="GRANITE_STYLE_CLASS_BADGE" value="badge" deprecated="1" deprecated-version="0.4.2">
-		<type name="utf8" c:type="const gchar*"/>
-	</constant>
-	<constant name="CATEGORY_EXPANDER" c:identifier="GRANITE_STYLE_CLASS_CATEGORY_EXPANDER" value="category-expander" deprecated="1" deprecated-version="0.4.2">
-		<type name="utf8" c:type="const gchar*"/>
-	</constant>
-	<constant name="CONTENT_VIEW" c:identifier="GRANITE_STYLE_CLASS_CONTENT_VIEW" value="content-view" deprecated="1" deprecated-version="0.4.2">
-		<type name="utf8" c:type="const gchar*"/>
-	</constant>
-	<constant name="CONTENT_VIEW_WINDOW" c:identifier="GRANITE_STYLE_CLASS_CONTENT_VIEW_WINDOW" value="content-view-window" deprecated="1" deprecated-version="0.4.2">
-		<type name="utf8" c:type="const gchar*"/>
-	</constant>
-	<constant name="COMPOSITED" c:identifier="GRANITE_STYLE_CLASS_COMPOSITED" value="composited" deprecated="1" deprecated-version="0.4.2">
-		<type name="utf8" c:type="const gchar*"/>
-	</constant>
-	<constant name="DECORATED_WINDOW" c:identifier="GRANITE_STYLE_CLASS_DECORATED_WINDOW" value="decorated-window" deprecated="1" deprecated-version="0.4.2">
-		<type name="utf8" c:type="const gchar*"/>
-	</constant>
-	<constant name="H1_TEXT" c:identifier="GRANITE_STYLE_CLASS_H1_TEXT" value="h1" deprecated="1" deprecated-version="0.4.2">
-		<type name="utf8" c:type="const gchar*"/>
-	</constant>
-	<constant name="H2_TEXT" c:identifier="GRANITE_STYLE_CLASS_H2_TEXT" value="h2" deprecated="1" deprecated-version="0.4.2">
-		<type name="utf8" c:type="const gchar*"/>
-	</constant>
-	<constant name="H3_TEXT" c:identifier="GRANITE_STYLE_CLASS_H3_TEXT" value="h3" deprecated="1" deprecated-version="0.4.2">
-		<type name="utf8" c:type="const gchar*"/>
-	</constant>
-	<constant name="HELP_BUTTON" c:identifier="GRANITE_STYLE_CLASS_HELP_BUTTON" value="help_button" deprecated="1" deprecated-version="0.4.2">
-		<type name="utf8" c:type="const gchar*"/>
-	</constant>
-	<constant name="OVERLAY_BAR" c:identifier="GRANITE_STYLE_CLASS_OVERLAY_BAR" value="overlay-bar" deprecated="1" deprecated-version="0.4.2">
-		<type name="utf8" c:type="const gchar*"/>
-	</constant>
-	<constant name="POPOVER" c:identifier="GRANITE_STYLE_CLASS_POPOVER" value="popover" deprecated="1" deprecated-version="0.4.2">
-		<type name="utf8" c:type="const gchar*"/>
-	</constant>
-	<constant name="POPOVER_BG" c:identifier="GRANITE_STYLE_CLASS_POPOVER_BG" value="popover_bg" deprecated="1" deprecated-version="0.4.2">
-		<type name="utf8" c:type="const gchar*"/>
-	</constant>
-	<constant name="SOURCE_LIST" c:identifier="GRANITE_STYLE_CLASS_SOURCE_LIST" value="source-list" deprecated="1" deprecated-version="0.4.2">
-		<type name="utf8" c:type="const gchar*"/>
-	</constant>
-	<constant name="THIN_PANE_SEPARATOR" c:identifier="GRANITE_STYLE_CLASS_THIN_PANE_SEPARATOR" value="sidebar-pane-separator" deprecated="1" deprecated-version="0.4.2">
-		<type name="utf8" c:type="const gchar*"/>
-	</constant>
-	<constant name="TITLE_TEXT" c:identifier="GRANITE_STYLE_CLASS_TITLE_TEXT" value="title" deprecated="1" deprecated-version="0.4.2">
-		<type name="utf8" c:type="const gchar*"/>
-	</constant>
-	<class name="DrawingBufferSurface" c:type="GraniteDrawingBufferSurface" glib:type-name="GraniteDrawingBufferSurface" glib:get-type="granite_drawing_buffer_surface_get_type" glib:type-struct="DrawingBufferSurfaceClass" parent="GObject.Object">
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<class name="DrawingBufferSurface" c:type="GraniteDrawingBufferSurface" glib:type-name="GraniteDrawingBufferSurface" glib:get-type="granite_drawing_buffer_surface_get_type" glib:type-struct="DrawingBufferSurfaceClass" parent="GObject.Object" c:symbol-prefix="drawing_buffer_surface">
 		<field name="parent_instance" readable="0" private="1">
 			<type name="GObject.Object" c:type="GObject"/>
 		</field>
@@ -206,7 +174,7 @@
 		</constructor>
 		<method name="clear" c:identifier="granite_drawing_buffer_surface_clear">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 		</method>
 		<method name="load_to_pixbuf" c:identifier="granite_drawing_buffer_surface_load_to_pixbuf">
@@ -221,7 +189,7 @@
 		</method>
 		<method name="fast_blur" c:identifier="granite_drawing_buffer_surface_fast_blur">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="radius" transfer-ownership="none">
@@ -234,7 +202,7 @@
 		</method>
 		<method name="exponential_blur" c:identifier="granite_drawing_buffer_surface_exponential_blur">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="radius" transfer-ownership="none">
@@ -244,7 +212,7 @@
 		</method>
 		<method name="gaussian_blur" c:identifier="granite_drawing_buffer_surface_gaussian_blur">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="radius" transfer-ownership="none">
@@ -262,8 +230,8 @@
 		</field>
 	</record>
 	<record name="DrawingBufferSurfacePrivate" c:type="GraniteDrawingBufferSurfacePrivate" disguised="1"/>
-	<class name="DrawingColor" c:type="GraniteDrawingColor" glib:type-name="GraniteDrawingColor" glib:get-type="granite_drawing_color_get_type" glib:type-struct="DrawingColorClass" parent="GObject.Object">
-		<implements name="Granite.GraniteServicesSettingsSerializable"/>
+	<class name="DrawingColor" c:type="GraniteDrawingColor" glib:type-name="GraniteDrawingColor" glib:get-type="granite_drawing_color_get_type" glib:type-struct="DrawingColorClass" parent="GObject.Object" c:symbol-prefix="drawing_color">
+		<implements name="Granite.ServicesSettingsSerializable"/>
 		<field name="parent_instance" readable="0" private="1">
 			<type name="GObject.Object" c:type="GObject"/>
 		</field>
@@ -543,13 +511,13 @@
 		</field>
 	</record>
 	<record name="DrawingColorPrivate" c:type="GraniteDrawingColorPrivate" disguised="1"/>
-	<class name="DrawingUtilities" c:type="GraniteDrawingUtilities" glib:type-name="GraniteDrawingUtilities" glib:get-type="granite_drawing_utilities_get_type" glib:type-struct="DrawingUtilitiesClass" parent="GObject.Object">
+	<class name="DrawingUtilities" c:type="GraniteDrawingUtilities" glib:type-name="GraniteDrawingUtilities" glib:get-type="granite_drawing_utilities_get_type" glib:type-struct="DrawingUtilitiesClass" parent="GObject.Object" c:symbol-prefix="drawing_utilities">
 		<field name="parent_instance" readable="0" private="1">
 			<type name="GObject.Object" c:type="GObject"/>
 		</field>
 		<function name="cairo_rounded_rectangle" c:identifier="granite_drawing_utilities_cairo_rounded_rectangle">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="cr" transfer-ownership="none">
@@ -597,7 +565,7 @@
 		</field>
 	</record>
 	<record name="DrawingUtilitiesPrivate" c:type="GraniteDrawingUtilitiesPrivate" disguised="1"/>
-	<class name="GtkPatchAboutDialog" c:type="GraniteGtkPatchAboutDialog" glib:type-name="GraniteGtkPatchAboutDialog" glib:get-type="granite_gtk_patch_about_dialog_get_type" glib:type-struct="GtkPatchAboutDialogClass" parent="Gtk.Dialog">
+	<class name="GtkPatchAboutDialog" c:type="GraniteGtkPatchAboutDialog" glib:type-name="GraniteGtkPatchAboutDialog" glib:get-type="granite_gtk_patch_about_dialog_get_type" glib:type-struct="GtkPatchAboutDialogClass" parent="Gtk.Dialog" c:symbol-prefix="gtk_patch_about_dialog">
 		<field name="parent_instance" readable="0" private="1">
 			<type name="Gtk.Dialog" c:type="GtkDialog"/>
 		</field>
@@ -620,7 +588,7 @@
 		</method>
 		<method name="set_artists" c:identifier="granite_gtk_patch_about_dialog_set_artists">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -652,7 +620,7 @@
 		</method>
 		<method name="set_authors" c:identifier="granite_gtk_patch_about_dialog_set_authors">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -675,7 +643,7 @@
 		</method>
 		<method name="set_comments" c:identifier="granite_gtk_patch_about_dialog_set_comments">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -693,7 +661,7 @@
 		</method>
 		<method name="set_copyright" c:identifier="granite_gtk_patch_about_dialog_set_copyright">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -720,7 +688,7 @@
 		</method>
 		<method name="set_documenters" c:identifier="granite_gtk_patch_about_dialog_set_documenters">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -743,7 +711,7 @@
 		</method>
 		<method name="set_license" c:identifier="granite_gtk_patch_about_dialog_set_license">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -761,7 +729,7 @@
 		</method>
 		<method name="set_license_type" c:identifier="granite_gtk_patch_about_dialog_set_license_type">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -779,7 +747,7 @@
 		</method>
 		<method name="set_logo" c:identifier="granite_gtk_patch_about_dialog_set_logo">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -797,7 +765,7 @@
 		</method>
 		<method name="set_logo_icon_name" c:identifier="granite_gtk_patch_about_dialog_set_logo_icon_name">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -815,7 +783,7 @@
 		</method>
 		<method name="set_program_name" c:identifier="granite_gtk_patch_about_dialog_set_program_name">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -833,7 +801,7 @@
 		</method>
 		<method name="set_translator_credits" c:identifier="granite_gtk_patch_about_dialog_set_translator_credits">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -851,7 +819,7 @@
 		</method>
 		<method name="set_version" c:identifier="granite_gtk_patch_about_dialog_set_version">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -869,7 +837,7 @@
 		</method>
 		<method name="set_website" c:identifier="granite_gtk_patch_about_dialog_set_website">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -887,7 +855,7 @@
 		</method>
 		<method name="set_website_label" c:identifier="granite_gtk_patch_about_dialog_set_website_label">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -934,7 +902,7 @@
 	<record name="GtkPatchAboutDialogPrivate" c:type="GraniteGtkPatchAboutDialogPrivate" disguised="1"/>
 	<function name="services_application_set_badge" c:identifier="granite_services_application_set_badge">
 		<return-value transfer-ownership="none">
-			<type name="none"/>
+			<type name="none" c:type="void"/>
 		</return-value>
 		<parameters>
 			<parameter name="count" transfer-ownership="none">
@@ -960,7 +928,7 @@
 	</function>
 	<function name="services_application_set_badge_visible" c:identifier="granite_services_application_set_badge_visible">
 		<return-value transfer-ownership="none">
-			<type name="none"/>
+			<type name="none" c:type="void"/>
 		</return-value>
 		<parameters>
 			<parameter name="visible" transfer-ownership="none">
@@ -986,7 +954,7 @@
 	</function>
 	<function name="services_application_set_progress" c:identifier="granite_services_application_set_progress">
 		<return-value transfer-ownership="none">
-			<type name="none"/>
+			<type name="none" c:type="void"/>
 		</return-value>
 		<parameters>
 			<parameter name="progress" transfer-ownership="none">
@@ -1012,7 +980,7 @@
 	</function>
 	<function name="services_application_set_progress_visible" c:identifier="granite_services_application_set_progress_visible">
 		<return-value transfer-ownership="none">
-			<type name="none"/>
+			<type name="none" c:type="void"/>
 		</return-value>
 		<parameters>
 			<parameter name="visible" transfer-ownership="none">
@@ -1047,31 +1015,31 @@
 	<enumeration name="ContractorError" c:type="GraniteServicesContractorError" glib:error-domain="granite-services-contractor-error-quark">
 		<member name="service_not_available" c:identifier="GRANITE_SERVICES_CONTRACTOR_ERROR_SERVICE_NOT_AVAILABLE" value="0"/>
 	</enumeration>
-	<class name="ServicesContractorProxy" c:type="GraniteServicesContractorProxy" glib:type-name="GraniteServicesContractorProxy" glib:get-type="granite_services_contractor_proxy_get_type" glib:type-struct="ServicesContractorProxyClass" parent="GObject.Object">
+	<class name="ServicesContractorProxy" c:type="GraniteServicesContractorProxy" glib:type-name="GraniteServicesContractorProxy" glib:get-type="granite_services_contractor_proxy_get_type" glib:type-struct="ServicesContractorProxyClass" parent="GObject.Object" c:symbol-prefix="services_contractor_proxy">
 		<field name="parent_instance" readable="0" private="1">
 			<type name="GObject.Object" c:type="GObject"/>
 		</field>
 		<glib:signal name="contracts-changed">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 		</glib:signal>
 		<function name="get_instance" c:identifier="granite_services_contractor_proxy_get_instance" throws="1">
 			<return-value transfer-ownership="full">
-				<type name="Granite.GraniteServicesContractorProxy" c:type="GraniteServicesContractorProxy*"/>
+				<type name="Granite.ServicesContractorProxy" c:type="GraniteServicesContractorProxy*"/>
 			</return-value>
 		</function>
 		<function name="get_all_contracts" c:identifier="granite_services_contractor_proxy_get_all_contracts" throws="1">
 			<return-value transfer-ownership="full">
 				<type name="Gee.List" c:type="GeeList*">
-					<type name="Granite.GraniteServicesContract" c:type="GraniteServicesContract*"/>
+					
 				</type>
 			</return-value>
 		</function>
 		<function name="get_contracts_by_mime" c:identifier="granite_services_contractor_proxy_get_contracts_by_mime" throws="1">
 			<return-value transfer-ownership="full">
 				<type name="Gee.List" c:type="GeeList*">
-					<type name="Granite.GraniteServicesContract" c:type="GraniteServicesContract*"/>
+					
 				</type>
 			</return-value>
 			<parameters>
@@ -1083,7 +1051,7 @@
 		<function name="get_contracts_by_mimelist" c:identifier="granite_services_contractor_proxy_get_contracts_by_mimelist" throws="1">
 			<return-value transfer-ownership="full">
 				<type name="Gee.List" c:type="GeeList*">
-					<type name="Granite.GraniteServicesContract" c:type="GraniteServicesContract*"/>
+					
 				</type>
 			</return-value>
 			<parameters>
@@ -1100,7 +1068,7 @@
 		<function name="get_contracts_for_file" c:identifier="granite_services_contractor_proxy_get_contracts_for_file" throws="1">
 			<return-value transfer-ownership="full">
 				<type name="Gee.List" c:type="GeeList*">
-					<type name="Granite.GraniteServicesContract" c:type="GraniteServicesContract*"/>
+					
 				</type>
 			</return-value>
 			<parameters>
@@ -1112,7 +1080,7 @@
 		<function name="get_contracts_for_files" c:identifier="granite_services_contractor_proxy_get_contracts_for_files" throws="1">
 			<return-value transfer-ownership="full">
 				<type name="Gee.List" c:type="GeeList*">
-					<type name="Granite.GraniteServicesContract" c:type="GraniteServicesContract*"/>
+					
 				</type>
 			</return-value>
 			<parameters>
@@ -1136,18 +1104,18 @@
 		</field>
 	</record>
 	<record name="ServicesContractorProxyPrivate" c:type="GraniteServicesContractorProxyPrivate" disguised="1"/>
-	<class name="ServicesIconFactory" c:type="GraniteServicesIconFactory" glib:type-name="GraniteServicesIconFactory" glib:get-type="granite_services_icon_factory_get_type" glib:type-struct="ServicesIconFactoryClass" parent="GObject.Object" deprecated="1" deprecated-version="5.2.4">
+	<class name="ServicesIconFactory" c:type="GraniteServicesIconFactory" glib:type-name="GraniteServicesIconFactory" glib:get-type="granite_services_icon_factory_get_type" glib:type-struct="ServicesIconFactoryClass" parent="GObject.Object" deprecated="1" deprecated-version="5.2.4" c:symbol-prefix="services_icon_factory">
 		<field name="parent_instance" readable="0" private="1">
 			<type name="GObject.Object" c:type="GObject"/>
 		</field>
 		<constructor name="new" c:identifier="granite_services_icon_factory_new">
 			<return-value transfer-ownership="full">
-				<type name="Granite.GraniteServicesIconFactory" c:type="GraniteServicesIconFactory*"/>
+				<type name="Granite.ServicesIconFactory" c:type="GraniteServicesIconFactory*"/>
 			</return-value>
 		</constructor>
 		<function name="get_default" c:identifier="granite_services_icon_factory_get_default">
 			<return-value transfer-ownership="full">
-				<type name="Granite.GraniteServicesIconFactory" c:type="GraniteServicesIconFactory*"/>
+				<type name="Granite.ServicesIconFactory" c:type="GraniteServicesIconFactory*"/>
 			</return-value>
 		</function>
 		<method name="load_symbolic_icon_from_gicon" c:identifier="granite_services_icon_factory_load_symbolic_icon_from_gicon" deprecated="1" deprecated-version="5.2.4">
@@ -1192,28 +1160,28 @@
 		</field>
 	</record>
 	<record name="ServicesIconFactoryPrivate" c:type="GraniteServicesIconFactoryPrivate" disguised="1"/>
-	<class name="ServicesLogger" c:type="GraniteServicesLogger" glib:type-name="GraniteServicesLogger" glib:get-type="granite_services_logger_get_type" glib:type-struct="ServicesLoggerClass" parent="GObject.Object">
+	<class name="ServicesLogger" c:type="GraniteServicesLogger" glib:type-name="GraniteServicesLogger" glib:get-type="granite_services_logger_get_type" glib:type-struct="ServicesLoggerClass" parent="GObject.Object" c:symbol-prefix="services_logger">
 		<field name="parent_instance" readable="0" private="1">
 			<type name="GObject.Object" c:type="GObject"/>
 		</field>
 		<function name="get_DisplayLevel" c:identifier="granite_services_logger_get_DisplayLevel">
 			<return-value transfer-ownership="none">
-				<type name="Granite.GraniteServicesLogLevel" c:type="GraniteServicesLogLevel"/>
+				<type name="Granite.ServicesLogLevel" c:type="GraniteServicesLogLevel"/>
 			</return-value>
 		</function>
 		<function name="set_DisplayLevel" c:identifier="granite_services_logger_set_DisplayLevel">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
-					<type name="Granite.GraniteServicesLogLevel" c:type="GraniteServicesLogLevel"/>
+					<type name="Granite.ServicesLogLevel" c:type="GraniteServicesLogLevel"/>
 				</parameter>
 			</parameters>
 		</function>
 		<function name="initialize" c:identifier="granite_services_logger_initialize">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="app_name" transfer-ownership="none">
@@ -1223,7 +1191,7 @@
 		</function>
 		<function name="notification" c:identifier="granite_services_logger_notification">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="msg" transfer-ownership="none">
@@ -1233,7 +1201,7 @@
 		</function>
 		<constructor name="new" c:identifier="granite_services_logger_new">
 			<return-value transfer-ownership="full">
-				<type name="Granite.GraniteServicesLogger" c:type="GraniteServicesLogger*"/>
+				<type name="Granite.ServicesLogger" c:type="GraniteServicesLogger*"/>
 			</return-value>
 		</constructor>
 		<field name="priv" readable="0" private="1">
@@ -1246,7 +1214,7 @@
 		</field>
 	</record>
 	<record name="ServicesLoggerPrivate" c:type="GraniteServicesLoggerPrivate" disguised="1"/>
-	<class name="ServicesPaths" c:type="GraniteServicesPaths" glib:type-name="GraniteServicesPaths" glib:get-type="granite_services_paths_get_type" glib:type-struct="ServicesPathsClass" parent="GObject.Object" deprecated="1" deprecated-version="5.5.0">
+	<class name="ServicesPaths" c:type="GraniteServicesPaths" glib:type-name="GraniteServicesPaths" glib:get-type="granite_services_paths_get_type" glib:type-struct="ServicesPathsClass" parent="GObject.Object" deprecated="1" deprecated-version="5.5.0" c:symbol-prefix="services_paths">
 		<field name="parent_instance" readable="0" private="1">
 			<type name="GObject.Object" c:type="GObject"/>
 		</field>
@@ -1257,7 +1225,7 @@
 		</function>
 		<function name="set_home_folder" c:identifier="granite_services_paths_set_home_folder">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -1272,7 +1240,7 @@
 		</function>
 		<function name="set_data_folder" c:identifier="granite_services_paths_set_data_folder">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -1287,7 +1255,7 @@
 		</function>
 		<function name="set_xdg_config_home_folder" c:identifier="granite_services_paths_set_xdg_config_home_folder">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -1302,7 +1270,7 @@
 		</function>
 		<function name="set_xdg_data_home_folder" c:identifier="granite_services_paths_set_xdg_data_home_folder">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -1317,7 +1285,7 @@
 		</function>
 		<function name="set_xdg_cache_home_folder" c:identifier="granite_services_paths_set_xdg_cache_home_folder">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -1334,7 +1302,7 @@
 		</function>
 		<function name="set_xdg_data_dir_folders" c:identifier="granite_services_paths_set_xdg_data_dir_folders">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="full">
@@ -1351,7 +1319,7 @@
 		</function>
 		<function name="set_user_config_folder" c:identifier="granite_services_paths_set_user_config_folder">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -1366,7 +1334,7 @@
 		</function>
 		<function name="set_user_data_folder" c:identifier="granite_services_paths_set_user_data_folder">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -1381,7 +1349,7 @@
 		</function>
 		<function name="set_user_cache_folder" c:identifier="granite_services_paths_set_user_cache_folder">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -1391,7 +1359,7 @@
 		</function>
 		<function name="initialize" c:identifier="granite_services_paths_initialize">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="app_name" transfer-ownership="none">
@@ -1414,7 +1382,7 @@
 		</function>
 		<constructor name="new" c:identifier="granite_services_paths_new">
 			<return-value transfer-ownership="full">
-				<type name="Granite.GraniteServicesPaths" c:type="GraniteServicesPaths*"/>
+				<type name="Granite.ServicesPaths" c:type="GraniteServicesPaths*"/>
 			</return-value>
 		</constructor>
 		<field name="priv" readable="0" private="1">
@@ -1427,13 +1395,13 @@
 		</field>
 	</record>
 	<record name="ServicesPathsPrivate" c:type="GraniteServicesPathsPrivate" disguised="1"/>
-	<class name="ServicesSettings" c:type="GraniteServicesSettings" glib:type-name="GraniteServicesSettings" glib:get-type="granite_services_settings_get_type" glib:type-struct="ServicesSettingsClass" parent="GObject.Object" abstract="1" deprecated="1" deprecated-version="5.4.0">
+	<class name="ServicesSettings" c:type="GraniteServicesSettings" glib:type-name="GraniteServicesSettings" glib:get-type="granite_services_settings_get_type" glib:type-struct="ServicesSettingsClass" parent="GObject.Object" abstract="1" deprecated="1" deprecated-version="5.4.0" c:symbol-prefix="services_settings">
 		<field name="parent_instance" readable="0" private="1">
 			<type name="GObject.Object" c:type="GObject"/>
 		</field>
 		<glib:signal name="changed">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 		</glib:signal>
 		<property name="schema" writable="1" construct-only="1">
@@ -1446,7 +1414,7 @@
 		</method>
 		<method name="verify" c:identifier="granite_services_settings_verify">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="key" transfer-ownership="none">
@@ -1456,7 +1424,7 @@
 		</method>
 		<virtual-method name="verify" invoker="verify">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="key" transfer-ownership="none">
@@ -1475,11 +1443,11 @@
 		<field name="verify">
 			<callback name="verify" c:type="verify">
 				<return-value transfer-ownership="full">
-					<type name="none"/>
+					<type name="none" c:type="void"/>
 				</return-value>
 				<parameters>
 					<parameter name="self" transfer-ownership="none">
-						<type name="Granite.GraniteServicesSettings" c:type="GraniteServicesSettings*"/>
+						<type name="Granite.ServicesSettings" c:type="GraniteServicesSettings*"/>
 					</parameter>
 					<parameter name="key" transfer-ownership="none">
 						<type name="utf8" c:type="const gchar*"/>
@@ -1489,13 +1457,13 @@
 		</field>
 	</record>
 	<record name="ServicesSettingsPrivate" c:type="GraniteServicesSettingsPrivate" disguised="1"/>
-	<class name="ServicesSimpleCommand" c:type="GraniteServicesSimpleCommand" glib:type-name="GraniteServicesSimpleCommand" glib:get-type="granite_services_simple_command_get_type" glib:type-struct="ServicesSimpleCommandClass" parent="GObject.Object" deprecated="1" deprecated-version="5.5.0">
+	<class name="ServicesSimpleCommand" c:type="GraniteServicesSimpleCommand" glib:type-name="GraniteServicesSimpleCommand" glib:get-type="granite_services_simple_command_get_type" glib:type-struct="ServicesSimpleCommandClass" parent="GObject.Object" deprecated="1" deprecated-version="5.5.0" c:symbol-prefix="services_simple_command">
 		<field name="parent_instance" readable="0" private="1">
 			<type name="GObject.Object" c:type="GObject"/>
 		</field>
 		<glib:signal name="done">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="exit" transfer-ownership="none">
@@ -1505,7 +1473,7 @@
 		</glib:signal>
 		<glib:signal name="output-changed">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="text" transfer-ownership="none">
@@ -1515,7 +1483,7 @@
 		</glib:signal>
 		<glib:signal name="standard-changed">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="text" transfer-ownership="none">
@@ -1525,7 +1493,7 @@
 		</glib:signal>
 		<glib:signal name="error-changed">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="text" transfer-ownership="none">
@@ -1544,7 +1512,7 @@
 		</field>
 		<constructor name="new" c:identifier="granite_services_simple_command_new">
 			<return-value transfer-ownership="full">
-				<type name="Granite.GraniteServicesSimpleCommand" c:type="GraniteServicesSimpleCommand*"/>
+				<type name="Granite.ServicesSimpleCommand" c:type="GraniteServicesSimpleCommand*"/>
 			</return-value>
 			<parameters>
 				<parameter name="dir" transfer-ownership="none">
@@ -1557,7 +1525,7 @@
 		</constructor>
 		<method name="run" c:identifier="granite_services_simple_command_run">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 		</method>
 		<field name="priv" readable="0" private="1">
@@ -1570,13 +1538,13 @@
 		</field>
 	</record>
 	<record name="ServicesSimpleCommandPrivate" c:type="GraniteServicesSimpleCommandPrivate" disguised="1"/>
-	<class name="ServicesSystem" c:type="GraniteServicesSystem" glib:type-name="GraniteServicesSystem" glib:get-type="granite_services_system_get_type" glib:type-struct="ServicesSystemClass" parent="GObject.Object">
+	<class name="ServicesSystem" c:type="GraniteServicesSystem" glib:type-name="GraniteServicesSystem" glib:get-type="granite_services_system_get_type" glib:type-struct="ServicesSystemClass" parent="GObject.Object" c:symbol-prefix="services_system">
 		<field name="parent_instance" readable="0" private="1">
 			<type name="GObject.Object" c:type="GObject"/>
 		</field>
 		<function name="open_uri" c:identifier="granite_services_system_open_uri" deprecated="1" deprecated-version="5.2.4">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="uri" transfer-ownership="none">
@@ -1586,7 +1554,7 @@
 		</function>
 		<function name="open" c:identifier="granite_services_system_open" deprecated="1" deprecated-version="5.2.4">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="file" transfer-ownership="none">
@@ -1596,7 +1564,7 @@
 		</function>
 		<function name="open_files" c:identifier="granite_services_system_open_files" deprecated="1" deprecated-version="5.2.4">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="files" transfer-ownership="none">
@@ -1611,7 +1579,7 @@
 		</function>
 		<function name="launch" c:identifier="granite_services_system_launch" deprecated="1" deprecated-version="5.2.4">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="app" transfer-ownership="none">
@@ -1631,7 +1599,7 @@
 		</function>
 		<function name="launch_with_files" c:identifier="granite_services_system_launch_with_files" deprecated="1" deprecated-version="5.2.4">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="app" transfer-ownership="none" allow-none="1">
@@ -1654,7 +1622,7 @@
 		</function>
 		<constructor name="new" c:identifier="granite_services_system_new">
 			<return-value transfer-ownership="full">
-				<type name="Granite.GraniteServicesSystem" c:type="GraniteServicesSystem*"/>
+				<type name="Granite.ServicesSystem" c:type="GraniteServicesSystem*"/>
 			</return-value>
 		</constructor>
 		<field name="priv" readable="0" private="1">
@@ -1667,7 +1635,7 @@
 		</field>
 	</record>
 	<record name="ServicesSystemPrivate" c:type="GraniteServicesSystemPrivate" disguised="1"/>
-	<interface name="ServicesContract" c:type="GraniteServicesContract" glib:type-name="GraniteServicesContract" glib:get-type="granite_services_contract_get_type" glib:type-struct="ServicesContractIface">
+	<interface name="ServicesContract" c:type="GraniteServicesContract" glib:type-name="GraniteServicesContract" glib:get-type="granite_services_contract_get_type" glib:type-struct="ServicesContractIface" c:symbol-prefix="services_contract">
 		<prerequisite name="GObject.Object"/>
 		<method name="get_display_name" c:identifier="granite_services_contract_get_display_name">
 			<return-value transfer-ownership="full">
@@ -1701,7 +1669,7 @@
 		</virtual-method>
 		<method name="execute_with_file" c:identifier="granite_services_contract_execute_with_file" throws="1">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="file" transfer-ownership="none">
@@ -1711,7 +1679,7 @@
 		</method>
 		<virtual-method name="execute_with_file" invoker="execute_with_file" throws="1">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="file" transfer-ownership="none">
@@ -1721,7 +1689,7 @@
 		</virtual-method>
 		<method name="execute_with_files" c:identifier="granite_services_contract_execute_with_files" throws="1">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="files" transfer-ownership="none">
@@ -1736,7 +1704,7 @@
 		</method>
 		<virtual-method name="execute_with_files" invoker="execute_with_files" throws="1">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="files" transfer-ownership="none">
@@ -1761,7 +1729,7 @@
 				</return-value>
 				<parameters>
 					<parameter name="self" transfer-ownership="none">
-						<type name="Granite.GraniteServicesContract" c:type="GraniteServicesContract*"/>
+						<type name="Granite.ServicesContract" c:type="GraniteServicesContract*"/>
 					</parameter>
 				</parameters>
 			</callback>
@@ -1773,7 +1741,7 @@
 				</return-value>
 				<parameters>
 					<parameter name="self" transfer-ownership="none">
-						<type name="Granite.GraniteServicesContract" c:type="GraniteServicesContract*"/>
+						<type name="Granite.ServicesContract" c:type="GraniteServicesContract*"/>
 					</parameter>
 				</parameters>
 			</callback>
@@ -1785,7 +1753,7 @@
 				</return-value>
 				<parameters>
 					<parameter name="self" transfer-ownership="none">
-						<type name="Granite.GraniteServicesContract" c:type="GraniteServicesContract*"/>
+						<type name="Granite.ServicesContract" c:type="GraniteServicesContract*"/>
 					</parameter>
 				</parameters>
 			</callback>
@@ -1793,11 +1761,11 @@
 		<field name="execute_with_file">
 			<callback name="execute_with_file" c:type="execute_with_file" throws="1">
 				<return-value transfer-ownership="full">
-					<type name="none"/>
+					<type name="none" c:type="void"/>
 				</return-value>
 				<parameters>
 					<parameter name="self" transfer-ownership="none">
-						<type name="Granite.GraniteServicesContract" c:type="GraniteServicesContract*"/>
+						<type name="Granite.ServicesContract" c:type="GraniteServicesContract*"/>
 					</parameter>
 					<parameter name="file" transfer-ownership="none">
 						<type name="Gio.File" c:type="GFile*"/>
@@ -1808,11 +1776,11 @@
 		<field name="execute_with_files">
 			<callback name="execute_with_files" c:type="execute_with_files" throws="1">
 				<return-value transfer-ownership="full">
-					<type name="none"/>
+					<type name="none" c:type="void"/>
 				</return-value>
 				<parameters>
 					<parameter name="self" transfer-ownership="none">
-						<type name="Granite.GraniteServicesContract" c:type="GraniteServicesContract*"/>
+						<type name="Granite.ServicesContract" c:type="GraniteServicesContract*"/>
 					</parameter>
 					<parameter name="files" transfer-ownership="none">
 						<array length="2" c:type="GFile**">
@@ -1826,7 +1794,7 @@
 			</callback>
 		</field>
 	</record>
-	<interface name="ServicesSettingsSerializable" c:type="GraniteServicesSettingsSerializable" glib:type-name="GraniteServicesSettingsSerializable" glib:get-type="granite_services_settings_serializable_get_type" glib:type-struct="ServicesSettingsSerializableIface">
+	<interface name="ServicesSettingsSerializable" c:type="GraniteServicesSettingsSerializable" glib:type-name="GraniteServicesSettingsSerializable" glib:get-type="granite_services_settings_serializable_get_type" glib:type-struct="ServicesSettingsSerializableIface" c:symbol-prefix="services_settings_serializable">
 		<prerequisite name="GObject.Object"/>
 		<method name="settings_serialize" c:identifier="granite_services_settings_serializable_settings_serialize">
 			<return-value transfer-ownership="full">
@@ -1840,7 +1808,7 @@
 		</virtual-method>
 		<method name="settings_deserialize" c:identifier="granite_services_settings_serializable_settings_deserialize">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="s" transfer-ownership="none">
@@ -1850,7 +1818,7 @@
 		</method>
 		<virtual-method name="settings_deserialize" invoker="settings_deserialize">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="s" transfer-ownership="none">
@@ -1870,7 +1838,7 @@
 				</return-value>
 				<parameters>
 					<parameter name="self" transfer-ownership="none">
-						<type name="Granite.GraniteServicesSettingsSerializable" c:type="GraniteServicesSettingsSerializable*"/>
+						<type name="Granite.ServicesSettingsSerializable" c:type="GraniteServicesSettingsSerializable*"/>
 					</parameter>
 				</parameters>
 			</callback>
@@ -1878,11 +1846,11 @@
 		<field name="settings_deserialize">
 			<callback name="settings_deserialize" c:type="settings_deserialize">
 				<return-value transfer-ownership="full">
-					<type name="none"/>
+					<type name="none" c:type="void"/>
 				</return-value>
 				<parameters>
 					<parameter name="self" transfer-ownership="none">
-						<type name="Granite.GraniteServicesSettingsSerializable" c:type="GraniteServicesSettingsSerializable*"/>
+						<type name="Granite.ServicesSettingsSerializable" c:type="GraniteServicesSettingsSerializable*"/>
 					</parameter>
 					<parameter name="s" transfer-ownership="none">
 						<type name="utf8" c:type="const gchar*"/>
@@ -1892,7 +1860,7 @@
 		</field>
 	</record>
 	<field name="granite_services_icon_factory" allow-none="1">
-		<type name="Granite.GraniteServicesIconFactory" c:type="GraniteServicesIconFactory*"/>
+		<type name="Granite.ServicesIconFactory" c:type="GraniteServicesIconFactory*"/>
 	</field>
 	<function name="widgets_utils_set_color_primary" c:identifier="granite_widgets_utils_set_color_primary">
 		<return-value transfer-ownership="full" allow-none="1">
@@ -1957,7 +1925,7 @@
 	</function>
 	<function name="widgets_utils_apply_text_style_to_label" c:identifier="granite_widgets_utils_apply_text_style_to_label" deprecated="1" deprecated-version="0.4.2">
 		<return-value transfer-ownership="full">
-			<type name="none"/>
+			<type name="none" c:type="void"/>
 		</return-value>
 		<parameters>
 			<parameter name="text_style" transfer-ownership="none">
@@ -1983,7 +1951,7 @@
 			<type name="utf8" c:type="gchar*"/>
 		</return-value>
 	</function>
-	<class name="WidgetsAboutDialog" c:type="GraniteWidgetsAboutDialog" glib:type-name="GraniteWidgetsAboutDialog" glib:get-type="granite_widgets_about_dialog_get_type" glib:type-struct="WidgetsAboutDialogClass" parent="Granite.GtkPatchAboutDialog" deprecated="1" deprecated-version="0.4.2">
+	<class name="WidgetsAboutDialog" c:type="GraniteWidgetsAboutDialog" glib:type-name="GraniteWidgetsAboutDialog" glib:get-type="granite_widgets_about_dialog_get_type" glib:type-struct="WidgetsAboutDialogClass" parent="Granite.GtkPatchAboutDialog" deprecated="1" deprecated-version="0.4.2" c:symbol-prefix="widgets_about_dialog">
 		<field name="parent_instance" readable="0" private="1">
 			<type name="Granite.GtkPatchAboutDialog" c:type="GraniteGtkPatchAboutDialog"/>
 		</field>
@@ -1997,7 +1965,7 @@
 		</method>
 		<method name="set_help" c:identifier="granite_widgets_about_dialog_set_help">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -2015,7 +1983,7 @@
 		</method>
 		<method name="set_translate" c:identifier="granite_widgets_about_dialog_set_translate">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -2033,7 +2001,7 @@
 		</method>
 		<method name="set_bug" c:identifier="granite_widgets_about_dialog_set_bug">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -2056,13 +2024,13 @@
 		</field>
 	</record>
 	<record name="WidgetsAboutDialogPrivate" c:type="GraniteWidgetsAboutDialogPrivate" disguised="1"/>
-	<class name="WidgetsAlertView" c:type="GraniteWidgetsAlertView" glib:type-name="GraniteWidgetsAlertView" glib:get-type="granite_widgets_alert_view_get_type" glib:type-struct="WidgetsAlertViewClass" parent="Gtk.Grid">
+	<class name="WidgetsAlertView" c:type="GraniteWidgetsAlertView" glib:type-name="GraniteWidgetsAlertView" glib:get-type="granite_widgets_alert_view_get_type" glib:type-struct="WidgetsAlertViewClass" parent="Gtk.Grid" c:symbol-prefix="widgets_alert_view">
 		<field name="parent_instance" readable="0" private="1">
 			<type name="Gtk.Grid" c:type="GtkGrid"/>
 		</field>
 		<glib:signal name="action-activated">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 		</glib:signal>
 		<property name="title" writable="1">
@@ -2075,7 +2043,7 @@
 		</method>
 		<method name="set_title" c:identifier="granite_widgets_alert_view_set_title">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -2093,7 +2061,7 @@
 		</method>
 		<method name="set_description" c:identifier="granite_widgets_alert_view_set_description">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -2111,7 +2079,7 @@
 		</method>
 		<method name="set_icon_name" c:identifier="granite_widgets_alert_view_set_icon_name">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -2137,7 +2105,7 @@
 		</constructor>
 		<method name="show_action" c:identifier="granite_widgets_alert_view_show_action">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="label" transfer-ownership="none" allow-none="1">
@@ -2147,7 +2115,7 @@
 		</method>
 		<method name="hide_action" c:identifier="granite_widgets_alert_view_hide_action">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 		</method>
 		<field name="priv" readable="0" private="1">
@@ -2160,7 +2128,7 @@
 		</field>
 	</record>
 	<record name="WidgetsAlertViewPrivate" c:type="GraniteWidgetsAlertViewPrivate" disguised="1"/>
-	<class name="WidgetsAppMenu" c:type="GraniteWidgetsAppMenu" glib:type-name="GraniteWidgetsAppMenu" glib:get-type="granite_widgets_app_menu_get_type" glib:type-struct="WidgetsAppMenuClass" parent="Gtk.MenuButton" deprecated="1" deprecated-version="0.4.1">
+	<class name="WidgetsAppMenu" c:type="GraniteWidgetsAppMenu" glib:type-name="GraniteWidgetsAppMenu" glib:get-type="granite_widgets_app_menu_get_type" glib:type-struct="WidgetsAppMenuClass" parent="Gtk.MenuButton" deprecated="1" deprecated-version="0.4.1" c:symbol-prefix="widgets_app_menu">
 		<field name="parent_instance" readable="0" private="1">
 			<type name="Gtk.MenuButton" c:type="GtkMenuButton"/>
 		</field>
@@ -2169,7 +2137,7 @@
 		</field>
 		<glib:signal name="show-about">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="w" transfer-ownership="none">
@@ -2202,7 +2170,7 @@
 		</constructor>
 		<method name="add_items" c:identifier="granite_widgets_app_menu_add_items">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="menu" transfer-ownership="none">
@@ -2220,7 +2188,7 @@
 		</field>
 	</record>
 	<record name="WidgetsAppMenuPrivate" c:type="GraniteWidgetsAppMenuPrivate" disguised="1"/>
-	<class name="WidgetsAvatar" c:type="GraniteWidgetsAvatar" glib:type-name="GraniteWidgetsAvatar" glib:get-type="granite_widgets_avatar_get_type" glib:type-struct="WidgetsAvatarClass" parent="Gtk.EventBox">
+	<class name="WidgetsAvatar" c:type="GraniteWidgetsAvatar" glib:type-name="GraniteWidgetsAvatar" glib:get-type="granite_widgets_avatar_get_type" glib:type-struct="WidgetsAvatarClass" parent="Gtk.EventBox" c:symbol-prefix="widgets_avatar">
 		<field name="parent_instance" readable="0" private="1">
 			<type name="Gtk.EventBox" c:type="GtkEventBox"/>
 		</field>
@@ -2234,7 +2202,7 @@
 		</method>
 		<method name="set_pixbuf" c:identifier="granite_widgets_avatar_set_pixbuf">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none" allow-none="1">
@@ -2282,7 +2250,7 @@
 		</constructor>
 		<method name="show_default" c:identifier="granite_widgets_avatar_show_default">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="pixel_size" transfer-ownership="none">
@@ -2300,7 +2268,7 @@
 		</field>
 	</record>
 	<record name="WidgetsAvatarPrivate" c:type="GraniteWidgetsAvatarPrivate" disguised="1"/>
-	<class name="WidgetsCellRendererBadge" c:type="GraniteWidgetsCellRendererBadge" glib:type-name="GraniteWidgetsCellRendererBadge" glib:get-type="granite_widgets_cell_renderer_badge_get_type" glib:type-struct="WidgetsCellRendererBadgeClass" parent="Gtk.CellRenderer">
+	<class name="WidgetsCellRendererBadge" c:type="GraniteWidgetsCellRendererBadge" glib:type-name="GraniteWidgetsCellRendererBadge" glib:get-type="granite_widgets_cell_renderer_badge_get_type" glib:type-struct="WidgetsCellRendererBadgeClass" parent="Gtk.CellRenderer" c:symbol-prefix="widgets_cell_renderer_badge">
 		<field name="parent_instance" readable="0" private="1">
 			<type name="Gtk.CellRenderer" c:type="GtkCellRenderer"/>
 		</field>
@@ -2314,7 +2282,7 @@
 		</method>
 		<method name="set_text" c:identifier="granite_widgets_cell_renderer_badge_set_text">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -2337,7 +2305,7 @@
 		</field>
 	</record>
 	<record name="WidgetsCellRendererBadgePrivate" c:type="GraniteWidgetsCellRendererBadgePrivate" disguised="1"/>
-	<class name="WidgetsCellRendererExpander" c:type="GraniteWidgetsCellRendererExpander" glib:type-name="GraniteWidgetsCellRendererExpander" glib:get-type="granite_widgets_cell_renderer_expander_get_type" glib:type-struct="WidgetsCellRendererExpanderClass" parent="Gtk.CellRenderer">
+	<class name="WidgetsCellRendererExpander" c:type="GraniteWidgetsCellRendererExpander" glib:type-name="GraniteWidgetsCellRendererExpander" glib:get-type="granite_widgets_cell_renderer_expander_get_type" glib:type-struct="WidgetsCellRendererExpanderClass" parent="Gtk.CellRenderer" c:symbol-prefix="widgets_cell_renderer_expander">
 		<field name="parent_instance" readable="0" private="1">
 			<type name="Gtk.CellRenderer" c:type="GtkCellRenderer"/>
 		</field>
@@ -2351,7 +2319,7 @@
 		</method>
 		<method name="set_is_category_expander" c:identifier="granite_widgets_cell_renderer_expander_set_is_category_expander">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -2409,7 +2377,7 @@
 		</field>
 	</record>
 	<record name="WidgetsCellRendererExpanderPrivate" c:type="GraniteWidgetsCellRendererExpanderPrivate" disguised="1"/>
-	<class name="WidgetsCollapsiblePaned" c:type="GraniteWidgetsCollapsiblePaned" glib:type-name="GraniteWidgetsCollapsiblePaned" glib:get-type="granite_widgets_collapsible_paned_get_type" glib:type-struct="WidgetsCollapsiblePanedClass" parent="Gtk.Paned" deprecated="1" deprecated-version="5.5.0">
+	<class name="WidgetsCollapsiblePaned" c:type="GraniteWidgetsCollapsiblePaned" glib:type-name="GraniteWidgetsCollapsiblePaned" glib:get-type="granite_widgets_collapsible_paned_get_type" glib:type-struct="WidgetsCollapsiblePanedClass" parent="Gtk.Paned" deprecated="1" deprecated-version="5.5.0" c:symbol-prefix="widgets_collapsible_paned">
 		<field name="parent_instance" readable="0" private="1">
 			<type name="Gtk.Paned" c:type="GtkPaned"/>
 		</field>
@@ -2423,7 +2391,7 @@
 		</method>
 		<method name="set_collapse_mode" c:identifier="granite_widgets_collapsible_paned_set_collapse_mode">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -2451,7 +2419,7 @@
 		</field>
 	</record>
 	<record name="WidgetsCollapsiblePanedPrivate" c:type="GraniteWidgetsCollapsiblePanedPrivate" disguised="1"/>
-	<class name="WidgetsCompositedWindow" c:type="GraniteWidgetsCompositedWindow" glib:type-name="GraniteWidgetsCompositedWindow" glib:get-type="granite_widgets_composited_window_get_type" glib:type-struct="WidgetsCompositedWindowClass" parent="Gtk.Window" deprecated="1" deprecated-version="5.5.0">
+	<class name="WidgetsCompositedWindow" c:type="GraniteWidgetsCompositedWindow" glib:type-name="GraniteWidgetsCompositedWindow" glib:get-type="granite_widgets_composited_window_get_type" glib:type-struct="WidgetsCompositedWindowClass" parent="Gtk.Window" deprecated="1" deprecated-version="5.5.0" c:symbol-prefix="widgets_composited_window">
 		<implements name="Gtk.Buildable"/>
 		<field name="parent_instance" readable="0" private="1">
 			<type name="Gtk.Window" c:type="GtkWindow"/>
@@ -2471,14 +2439,14 @@
 		</field>
 	</record>
 	<record name="WidgetsCompositedWindowPrivate" c:type="GraniteWidgetsCompositedWindowPrivate" disguised="1"/>
-	<class name="WidgetsDatePicker" c:type="GraniteWidgetsDatePicker" glib:type-name="GraniteWidgetsDatePicker" glib:get-type="granite_widgets_date_picker_get_type" glib:type-struct="WidgetsDatePickerClass" parent="Gtk.Entry">
+	<class name="WidgetsDatePicker" c:type="GraniteWidgetsDatePicker" glib:type-name="GraniteWidgetsDatePicker" glib:get-type="granite_widgets_date_picker_get_type" glib:type-struct="WidgetsDatePickerClass" parent="Gtk.Entry" c:symbol-prefix="widgets_date_picker">
 		<implements name="Gtk.Buildable"/>
 		<field name="parent_instance" readable="0" private="1">
 			<type name="Gtk.Entry" c:type="GtkEntry"/>
 		</field>
 		<glib:signal name="date-changed">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 		</glib:signal>
 		<property name="format" writable="1" construct-only="1">
@@ -2505,7 +2473,7 @@
 		</method>
 		<method name="set_date" c:identifier="granite_widgets_date_picker_set_date">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -2525,7 +2493,7 @@
 		</constructor>
 		<method name="position_dropdown" c:identifier="granite_widgets_date_picker_position_dropdown">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="rect" direction="out" transfer-ownership="full">
@@ -2535,7 +2503,7 @@
 		</method>
 		<virtual-method name="position_dropdown" invoker="position_dropdown">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="rect" direction="out" transfer-ownership="full">
@@ -2559,7 +2527,7 @@
 		<field name="position_dropdown">
 			<callback name="position_dropdown" c:type="position_dropdown">
 				<return-value transfer-ownership="full">
-					<type name="none"/>
+					<type name="none" c:type="void"/>
 				</return-value>
 				<parameters>
 					<parameter name="self" transfer-ownership="none">
@@ -2573,7 +2541,7 @@
 		</field>
 	</record>
 	<record name="WidgetsDatePickerPrivate" c:type="GraniteWidgetsDatePickerPrivate" disguised="1"/>
-	<class name="WidgetsTab" c:type="GraniteWidgetsTab" glib:type-name="GraniteWidgetsTab" glib:get-type="granite_widgets_tab_get_type" glib:type-struct="WidgetsTabClass" parent="Gtk.EventBox">
+	<class name="WidgetsTab" c:type="GraniteWidgetsTab" glib:type-name="GraniteWidgetsTab" glib:get-type="granite_widgets_tab_get_type" glib:type-struct="WidgetsTabClass" parent="Gtk.EventBox" c:symbol-prefix="widgets_tab">
 		<field name="parent_instance" readable="0" private="1">
 			<type name="Gtk.EventBox" c:type="GtkEventBox"/>
 		</field>
@@ -2587,7 +2555,7 @@
 		</method>
 		<method name="set_label" c:identifier="granite_widgets_tab_set_label">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -2605,7 +2573,7 @@
 		</method>
 		<method name="set_pinned" c:identifier="granite_widgets_tab_set_pinned">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -2623,7 +2591,7 @@
 		</method>
 		<method name="set_pinnable" c:identifier="granite_widgets_tab_set_pinnable">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -2641,7 +2609,7 @@
 		</method>
 		<method name="set_restore_data" c:identifier="granite_widgets_tab_set_restore_data">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -2668,7 +2636,7 @@
 		</method>
 		<method name="set_page" c:identifier="granite_widgets_tab_set_page">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -2686,7 +2654,7 @@
 		</method>
 		<method name="set_icon" c:identifier="granite_widgets_tab_set_icon">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none" allow-none="1">
@@ -2704,7 +2672,7 @@
 		</method>
 		<method name="set_working" c:identifier="granite_widgets_tab_set_working">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -2722,7 +2690,7 @@
 		</method>
 		<method name="set_ellipsize_mode" c:identifier="granite_widgets_tab_set_ellipsize_mode">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -2740,7 +2708,7 @@
 		</method>
 		<method name="set_fixed" c:identifier="granite_widgets_tab_set_fixed">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -2758,7 +2726,7 @@
 		</method>
 		<method name="set_menu" c:identifier="granite_widgets_tab_set_menu">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -2784,7 +2752,7 @@
 		</constructor>
 		<method name="close" c:identifier="granite_widgets_tab_close">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 		</method>
 		<field name="priv" readable="0" private="1">
@@ -2797,7 +2765,7 @@
 		</field>
 	</record>
 	<record name="WidgetsTabPrivate" c:type="GraniteWidgetsTabPrivate" disguised="1"/>
-	<class name="WidgetsDynamicNotebook" c:type="GraniteWidgetsDynamicNotebook" glib:type-name="GraniteWidgetsDynamicNotebook" glib:get-type="granite_widgets_dynamic_notebook_get_type" glib:type-struct="WidgetsDynamicNotebookClass" parent="Gtk.EventBox">
+	<class name="WidgetsDynamicNotebook" c:type="GraniteWidgetsDynamicNotebook" glib:type-name="GraniteWidgetsDynamicNotebook" glib:get-type="granite_widgets_dynamic_notebook_get_type" glib:type-struct="WidgetsDynamicNotebookClass" parent="Gtk.EventBox" c:symbol-prefix="widgets_dynamic_notebook">
 		<field name="parent_instance" readable="0" private="1">
 			<type name="Gtk.EventBox" c:type="GtkEventBox"/>
 		</field>
@@ -2819,7 +2787,7 @@
 		</method>
 		<method name="set_show_tabs" c:identifier="granite_widgets_dynamic_notebook_set_show_tabs">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -2837,7 +2805,7 @@
 		</method>
 		<method name="set_show_icons" c:identifier="granite_widgets_dynamic_notebook_set_show_icons">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -2855,7 +2823,7 @@
 		</method>
 		<method name="set_tabs_closable" c:identifier="granite_widgets_dynamic_notebook_set_tabs_closable">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -2873,7 +2841,7 @@
 		</method>
 		<method name="set_allow_drag" c:identifier="granite_widgets_dynamic_notebook_set_allow_drag">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -2891,7 +2859,7 @@
 		</method>
 		<method name="set_allow_new_window" c:identifier="granite_widgets_dynamic_notebook_set_allow_new_window">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -2909,7 +2877,7 @@
 		</method>
 		<method name="set_allow_duplication" c:identifier="granite_widgets_dynamic_notebook_set_allow_duplication">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -2927,7 +2895,7 @@
 		</method>
 		<method name="set_allow_restoring" c:identifier="granite_widgets_dynamic_notebook_set_allow_restoring">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -2945,7 +2913,7 @@
 		</method>
 		<method name="set_max_restorable_tabs" c:identifier="granite_widgets_dynamic_notebook_set_max_restorable_tabs">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -2963,7 +2931,7 @@
 		</method>
 		<method name="set_add_button_visible" c:identifier="granite_widgets_dynamic_notebook_set_add_button_visible">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -2981,7 +2949,7 @@
 		</method>
 		<method name="set_allow_pinning" c:identifier="granite_widgets_dynamic_notebook_set_allow_pinning">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -2999,7 +2967,7 @@
 		</method>
 		<method name="set_force_left" c:identifier="granite_widgets_dynamic_notebook_set_force_left">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -3017,7 +2985,7 @@
 		</method>
 		<method name="set_add_button_tooltip" c:identifier="granite_widgets_dynamic_notebook_set_add_button_tooltip">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -3035,7 +3003,7 @@
 		</method>
 		<method name="set_current" c:identifier="granite_widgets_dynamic_notebook_set_current">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -3065,7 +3033,7 @@
 		</method>
 		<method name="set_group_name" c:identifier="granite_widgets_dynamic_notebook_set_group_name">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -3083,7 +3051,7 @@
 		</method>
 		<method name="set_tab_bar_behavior" c:identifier="granite_widgets_dynamic_notebook_set_tab_bar_behavior">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -3101,7 +3069,7 @@
 		</method>
 		<glib:signal name="tab-added">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="tab" transfer-ownership="none">
@@ -3111,7 +3079,7 @@
 		</glib:signal>
 		<glib:signal name="tab-removed">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="tab" transfer-ownership="none">
@@ -3121,7 +3089,7 @@
 		</glib:signal>
 		<glib:signal name="tab-switched">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="old_tab" transfer-ownership="none" allow-none="1">
@@ -3134,7 +3102,7 @@
 		</glib:signal>
 		<glib:signal name="tab-reordered">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="tab" transfer-ownership="none">
@@ -3147,7 +3115,7 @@
 		</glib:signal>
 		<glib:signal name="tab-moved">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="tab" transfer-ownership="none">
@@ -3163,7 +3131,7 @@
 		</glib:signal>
 		<glib:signal name="tab-duplicated">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="duplicated_tab" transfer-ownership="none">
@@ -3173,7 +3141,7 @@
 		</glib:signal>
 		<glib:signal name="tab-restored">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="label" transfer-ownership="none">
@@ -3189,7 +3157,7 @@
 		</glib:signal>
 		<glib:signal name="new-tab-requested">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 		</glib:signal>
 		<glib:signal name="close-tab-requested">
@@ -3209,7 +3177,7 @@
 		</constructor>
 		<method name="remove_tab" c:identifier="granite_widgets_dynamic_notebook_remove_tab">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="tab" transfer-ownership="none">
@@ -3219,12 +3187,12 @@
 		</method>
 		<method name="next_page" c:identifier="granite_widgets_dynamic_notebook_next_page">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 		</method>
 		<method name="previous_page" c:identifier="granite_widgets_dynamic_notebook_previous_page">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 		</method>
 		<method name="get_children" c:identifier="granite_widgets_dynamic_notebook_get_children">
@@ -3246,7 +3214,7 @@
 		</method>
 		<method name="set_tab_position" c:identifier="granite_widgets_dynamic_notebook_set_tab_position">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="tab" transfer-ownership="none">
@@ -3315,13 +3283,13 @@
 		<member name="single" c:identifier="GRANITE_WIDGETS_DYNAMIC_NOTEBOOK_TAB_BAR_BEHAVIOR_SINGLE" value="1"/>
 		<member name="never" c:identifier="GRANITE_WIDGETS_DYNAMIC_NOTEBOOK_TAB_BAR_BEHAVIOR_NEVER" value="2"/>
 	</enumeration>
-	<class name="WidgetsModeButton" c:type="GraniteWidgetsModeButton" glib:type-name="GraniteWidgetsModeButton" glib:get-type="granite_widgets_mode_button_get_type" glib:type-struct="WidgetsModeButtonClass" parent="Gtk.Box">
+	<class name="WidgetsModeButton" c:type="GraniteWidgetsModeButton" glib:type-name="GraniteWidgetsModeButton" glib:get-type="granite_widgets_mode_button_get_type" glib:type-struct="WidgetsModeButtonClass" parent="Gtk.Box" c:symbol-prefix="widgets_mode_button">
 		<field name="parent_instance" readable="0" private="1">
 			<type name="Gtk.Box" c:type="GtkBox"/>
 		</field>
 		<glib:signal name="mode-added">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="index" transfer-ownership="none">
@@ -3334,7 +3302,7 @@
 		</glib:signal>
 		<glib:signal name="mode-removed">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="index" transfer-ownership="none">
@@ -3347,7 +3315,7 @@
 		</glib:signal>
 		<glib:signal name="mode-changed">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="widget" transfer-ownership="none">
@@ -3365,7 +3333,7 @@
 		</method>
 		<method name="set_selected" c:identifier="granite_widgets_mode_button_set_selected">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -3431,7 +3399,7 @@
 		</method>
 		<method name="set_active" c:identifier="granite_widgets_mode_button_set_active">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="new_active_index" transfer-ownership="none">
@@ -3441,7 +3409,7 @@
 		</method>
 		<method name="set_item_visible" c:identifier="granite_widgets_mode_button_set_item_visible">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="index" transfer-ownership="none">
@@ -3454,7 +3422,7 @@
 		</method>
 		<method name="remove" c:identifier="granite_widgets_mode_button_remove">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="index" transfer-ownership="none">
@@ -3464,7 +3432,7 @@
 		</method>
 		<method name="clear_children" c:identifier="granite_widgets_mode_button_clear_children">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 		</method>
 		<field name="priv" readable="0" private="1">
@@ -3477,7 +3445,7 @@
 		</field>
 	</record>
 	<record name="WidgetsModeButtonPrivate" c:type="GraniteWidgetsModeButtonPrivate" disguised="1"/>
-	<class name="WidgetsOverlayBar" c:type="GraniteWidgetsOverlayBar" glib:type-name="GraniteWidgetsOverlayBar" glib:get-type="granite_widgets_overlay_bar_get_type" glib:type-struct="WidgetsOverlayBarClass" parent="Gtk.EventBox">
+	<class name="WidgetsOverlayBar" c:type="GraniteWidgetsOverlayBar" glib:type-name="GraniteWidgetsOverlayBar" glib:get-type="granite_widgets_overlay_bar_get_type" glib:type-struct="WidgetsOverlayBarClass" parent="Gtk.EventBox" c:symbol-prefix="widgets_overlay_bar">
 		<field name="parent_instance" readable="0" private="1">
 			<type name="Gtk.EventBox" c:type="GtkEventBox"/>
 		</field>
@@ -3499,7 +3467,7 @@
 		</method>
 		<method name="set_status" c:identifier="granite_widgets_overlay_bar_set_status">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -3517,7 +3485,7 @@
 		</method>
 		<method name="set_label" c:identifier="granite_widgets_overlay_bar_set_label">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -3535,7 +3503,7 @@
 		</method>
 		<method name="set_active" c:identifier="granite_widgets_overlay_bar_set_active">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -3563,13 +3531,13 @@
 		</field>
 	</record>
 	<record name="WidgetsOverlayBarPrivate" c:type="GraniteWidgetsOverlayBarPrivate" disguised="1"/>
-	<class name="WidgetsSourceList" c:type="GraniteWidgetsSourceList" glib:type-name="GraniteWidgetsSourceList" glib:get-type="granite_widgets_source_list_get_type" glib:type-struct="WidgetsSourceListClass" parent="Gtk.ScrolledWindow">
+	<class name="WidgetsSourceList" c:type="GraniteWidgetsSourceList" glib:type-name="GraniteWidgetsSourceList" glib:get-type="granite_widgets_source_list_get_type" glib:type-struct="WidgetsSourceListClass" parent="Gtk.ScrolledWindow" c:symbol-prefix="widgets_source_list">
 		<field name="parent_instance" readable="0" private="1">
 			<type name="Gtk.ScrolledWindow" c:type="GtkScrolledWindow"/>
 		</field>
 		<glib:signal name="item-selected">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="item" transfer-ownership="none" allow-none="1">
@@ -3587,7 +3555,7 @@
 		</method>
 		<method name="set_root" c:identifier="granite_widgets_source_list_set_root">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -3605,7 +3573,7 @@
 		</method>
 		<method name="set_selected" c:identifier="granite_widgets_source_list_set_selected">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none" allow-none="1">
@@ -3623,7 +3591,7 @@
 		</method>
 		<method name="set_ellipsize_mode" c:identifier="granite_widgets_source_list_set_ellipsize_mode">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -3661,7 +3629,7 @@
 		</method>
 		<method name="set_filter_func" c:identifier="granite_widgets_source_list_set_filter_func">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="visible_func" transfer-ownership="none" allow-none="1" closure="1" scope="call">
@@ -3677,7 +3645,7 @@
 		</method>
 		<method name="refilter" c:identifier="granite_widgets_source_list_refilter">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 		</method>
 		<method name="is_item_expanded" c:identifier="granite_widgets_source_list_is_item_expanded">
@@ -3702,12 +3670,12 @@
 		</method>
 		<method name="stop_editing" c:identifier="granite_widgets_source_list_stop_editing">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 		</method>
 		<method name="enable_drag_source" c:identifier="granite_widgets_source_list_enable_drag_source">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="src_entries" transfer-ownership="none">
@@ -3722,12 +3690,12 @@
 		</method>
 		<method name="disable_drag_source" c:identifier="granite_widgets_source_list_disable_drag_source">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 		</method>
 		<method name="enable_drag_dest" c:identifier="granite_widgets_source_list_enable_drag_dest">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="dest_entries" transfer-ownership="none">
@@ -3745,7 +3713,7 @@
 		</method>
 		<method name="disable_drag_dest" c:identifier="granite_widgets_source_list_disable_drag_dest">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 		</method>
 		<method name="scroll_to_item" c:identifier="granite_widgets_source_list_scroll_to_item">
@@ -3817,19 +3785,7 @@
 				</parameter>
 			</parameters>
 		</method>
-		<callback name="VisibleFunc" c:type="GraniteWidgetsSourceListVisibleFunc">
-			<return-value transfer-ownership="full">
-				<type name="gboolean" c:type="gboolean"/>
-			</return-value>
-			<parameters>
-				<parameter name="item" transfer-ownership="none">
-					<type name="Granite.WidgetsSourceListItem" c:type="GraniteWidgetsSourceListItem*"/>
-				</parameter>
-				<parameter name="user_data" transfer-ownership="none" closure="1">
-					<type name="gpointer" c:type="void*"/>
-				</parameter>
-			</parameters>
-		</callback>
+		
 		<field name="priv" readable="0" private="1">
 			<type name="WidgetsSourceListPrivate" c:type="GraniteWidgetsSourceListPrivate*"/>
 		</field>
@@ -3841,7 +3797,7 @@
 		<field name="item_selected">
 			<callback name="widgets_source_list_item_selected" c:type="widgets_source_list_item_selected">
 				<return-value transfer-ownership="full">
-					<type name="none"/>
+					<type name="none" c:type="void"/>
 				</return-value>
 				<parameters>
 					<parameter name="item" transfer-ownership="none" allow-none="1">
@@ -3852,13 +3808,13 @@
 		</field>
 	</record>
 	<record name="WidgetsSourceListPrivate" c:type="GraniteWidgetsSourceListPrivate" disguised="1"/>
-	<class name="WidgetsSourceListItem" c:type="GraniteWidgetsSourceListItem" glib:type-name="GraniteWidgetsSourceListItem" glib:get-type="granite_widgets_source_list_item_get_type" glib:type-struct="WidgetsSourceListItemClass" parent="GObject.Object">
+	<class name="WidgetsSourceListItem" c:type="GraniteWidgetsSourceListItem" glib:type-name="GraniteWidgetsSourceListItem" glib:get-type="granite_widgets_source_list_item_get_type" glib:type-struct="WidgetsSourceListItemClass" parent="GObject.Object" c:symbol-prefix="widgets_source_list_item">
 		<field name="parent_instance" readable="0" private="1">
 			<type name="GObject.Object" c:type="GObject"/>
 		</field>
 		<glib:signal name="edited">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="new_name" transfer-ownership="none">
@@ -3868,12 +3824,12 @@
 		</glib:signal>
 		<glib:signal name="action-activated">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 		</glib:signal>
 		<glib:signal name="activated">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 		</glib:signal>
 		<property name="parent" writable="1">
@@ -3894,7 +3850,7 @@
 		</method>
 		<method name="set_name" c:identifier="granite_widgets_source_list_item_set_name">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -3912,7 +3868,7 @@
 		</method>
 		<method name="set_tooltip" c:identifier="granite_widgets_source_list_item_set_tooltip">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none" allow-none="1">
@@ -3930,7 +3886,7 @@
 		</method>
 		<method name="set_markup" c:identifier="granite_widgets_source_list_item_set_markup">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none" allow-none="1">
@@ -3948,7 +3904,7 @@
 		</method>
 		<method name="set_badge" c:identifier="granite_widgets_source_list_item_set_badge">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -3966,7 +3922,7 @@
 		</method>
 		<method name="set_editable" c:identifier="granite_widgets_source_list_item_set_editable">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -3984,7 +3940,7 @@
 		</method>
 		<method name="set_visible" c:identifier="granite_widgets_source_list_item_set_visible">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -4002,7 +3958,7 @@
 		</method>
 		<method name="set_selectable" c:identifier="granite_widgets_source_list_item_set_selectable">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -4020,7 +3976,7 @@
 		</method>
 		<method name="set_icon" c:identifier="granite_widgets_source_list_item_set_icon">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -4038,7 +3994,7 @@
 		</method>
 		<method name="set_activatable" c:identifier="granite_widgets_source_list_item_set_activatable">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -4056,7 +4012,7 @@
 		</method>
 		<method name="set_activatable_tooltip" c:identifier="granite_widgets_source_list_item_set_activatable_tooltip">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -4107,7 +4063,7 @@
 		<field name="edited">
 			<callback name="widgets_source_list_item_edited" c:type="widgets_source_list_item_edited">
 				<return-value transfer-ownership="full">
-					<type name="none"/>
+					<type name="none" c:type="void"/>
 				</return-value>
 				<parameters>
 					<parameter name="new_name" transfer-ownership="none">
@@ -4119,26 +4075,26 @@
 		<field name="action_activated">
 			<callback name="widgets_source_list_item_action_activated" c:type="widgets_source_list_item_action_activated">
 				<return-value transfer-ownership="full">
-					<type name="none"/>
+					<type name="none" c:type="void"/>
 				</return-value>
 			</callback>
 		</field>
 		<field name="activated">
 			<callback name="widgets_source_list_item_activated" c:type="widgets_source_list_item_activated">
 				<return-value transfer-ownership="full">
-					<type name="none"/>
+					<type name="none" c:type="void"/>
 				</return-value>
 			</callback>
 		</field>
 	</record>
 	<record name="WidgetsSourceListItemPrivate" c:type="GraniteWidgetsSourceListItemPrivate" disguised="1"/>
-	<class name="WidgetsSourceListExpandableItem" c:type="GraniteWidgetsSourceListExpandableItem" glib:type-name="GraniteWidgetsSourceListExpandableItem" glib:get-type="granite_widgets_source_list_expandable_item_get_type" glib:type-struct="WidgetsSourceListExpandableItemClass" parent="Granite.WidgetsSourceListItem">
+	<class name="WidgetsSourceListExpandableItem" c:type="GraniteWidgetsSourceListExpandableItem" glib:type-name="GraniteWidgetsSourceListExpandableItem" glib:get-type="granite_widgets_source_list_expandable_item_get_type" glib:type-struct="WidgetsSourceListExpandableItemClass" parent="Granite.WidgetsSourceListItem" c:symbol-prefix="widgets_source_list_expandable_item">
 		<field name="parent_instance" readable="0" private="1">
 			<type name="Granite.WidgetsSourceListItem" c:type="GraniteWidgetsSourceListItem"/>
 		</field>
 		<glib:signal name="child-added">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="item" transfer-ownership="none">
@@ -4148,7 +4104,7 @@
 		</glib:signal>
 		<glib:signal name="child-removed">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="item" transfer-ownership="none">
@@ -4158,7 +4114,7 @@
 		</glib:signal>
 		<glib:signal name="toggled">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 		</glib:signal>
 		<property name="collapsible" writable="1">
@@ -4171,7 +4127,7 @@
 		</method>
 		<method name="set_collapsible" c:identifier="granite_widgets_source_list_expandable_item_set_collapsible">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -4189,7 +4145,7 @@
 		</method>
 		<method name="set_expanded" c:identifier="granite_widgets_source_list_expandable_item_set_expanded">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -4207,13 +4163,13 @@
 		</method>
 		<property name="children">
 			<type name="Gee.Collection" c:type="GeeCollection*">
-				<type name="Granite.WidgetsSourceListItem" c:type="GraniteWidgetsSourceListItem*"/>
+				
 			</type>
 		</property>
 		<method name="get_children" c:identifier="granite_widgets_source_list_expandable_item_get_children">
 			<return-value transfer-ownership="full">
 				<type name="Gee.Collection" c:type="GeeCollection*">
-					<type name="Granite.WidgetsSourceListItem" c:type="GraniteWidgetsSourceListItem*"/>
+					
 				</type>
 			</return-value>
 		</method>
@@ -4239,7 +4195,7 @@
 		</method>
 		<method name="add" c:identifier="granite_widgets_source_list_expandable_item_add">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="item" transfer-ownership="none">
@@ -4249,7 +4205,7 @@
 		</method>
 		<method name="remove" c:identifier="granite_widgets_source_list_expandable_item_remove">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="item" transfer-ownership="none">
@@ -4259,12 +4215,12 @@
 		</method>
 		<method name="clear" c:identifier="granite_widgets_source_list_expandable_item_clear">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 		</method>
 		<method name="expand_all" c:identifier="granite_widgets_source_list_expandable_item_expand_all">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="inclusive" transfer-ownership="none">
@@ -4277,7 +4233,7 @@
 		</method>
 		<method name="collapse_all" c:identifier="granite_widgets_source_list_expandable_item_collapse_all">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="inclusive" transfer-ownership="none">
@@ -4290,12 +4246,12 @@
 		</method>
 		<method name="expand_with_parents" c:identifier="granite_widgets_source_list_expandable_item_expand_with_parents">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 		</method>
 		<method name="collapse_with_parents" c:identifier="granite_widgets_source_list_expandable_item_collapse_with_parents">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 		</method>
 		<field name="priv" readable="0" private="1">
@@ -4309,13 +4265,13 @@
 		<field name="toggled">
 			<callback name="widgets_source_list_expandable_item_toggled" c:type="widgets_source_list_expandable_item_toggled">
 				<return-value transfer-ownership="full">
-					<type name="none"/>
+					<type name="none" c:type="void"/>
 				</return-value>
 			</callback>
 		</field>
 	</record>
 	<record name="WidgetsSourceListExpandableItemPrivate" c:type="GraniteWidgetsSourceListExpandableItemPrivate" disguised="1"/>
-	<class name="WidgetsStorageBar" c:type="GraniteWidgetsStorageBar" glib:type-name="GraniteWidgetsStorageBar" glib:get-type="granite_widgets_storage_bar_get_type" glib:type-struct="WidgetsStorageBarClass" parent="Gtk.Box">
+	<class name="WidgetsStorageBar" c:type="GraniteWidgetsStorageBar" glib:type-name="GraniteWidgetsStorageBar" glib:get-type="granite_widgets_storage_bar_get_type" glib:type-struct="WidgetsStorageBarClass" parent="Gtk.Box" c:symbol-prefix="widgets_storage_bar">
 		<field name="parent_instance" readable="0" private="1">
 			<type name="Gtk.Box" c:type="GtkBox"/>
 		</field>
@@ -4329,7 +4285,7 @@
 		</method>
 		<method name="set_storage" c:identifier="granite_widgets_storage_bar_set_storage">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -4347,7 +4303,7 @@
 		</method>
 		<method name="set_total_usage" c:identifier="granite_widgets_storage_bar_set_total_usage">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -4365,7 +4321,7 @@
 		</method>
 		<method name="set_inner_margin_sides" c:identifier="granite_widgets_storage_bar_set_inner_margin_sides">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -4398,7 +4354,7 @@
 		</constructor>
 		<method name="update_block_size" c:identifier="granite_widgets_storage_bar_update_block_size">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="description" transfer-ownership="none">
@@ -4425,7 +4381,7 @@
 		<member name="video" c:identifier="GRANITE_WIDGETS_STORAGE_BAR_ITEM_DESCRIPTION_VIDEO" value="2"/>
 		<member name="photo" c:identifier="GRANITE_WIDGETS_STORAGE_BAR_ITEM_DESCRIPTION_PHOTO" value="3"/>
 		<member name="app" c:identifier="GRANITE_WIDGETS_STORAGE_BAR_ITEM_DESCRIPTION_APP" value="4"/>
-		<member name="files" c:identifier="GRANITE_WIDGETS_STORAGE_BAR_ITEM_DESCRIPTION_FILES" value="(null)"/>
+		<member name="files" c:identifier="GRANITE_WIDGETS_STORAGE_BAR_ITEM_DESCRIPTION_FILES" value="0"/>
 	</enumeration>
 	<function name="widgets_storage_bar_item_description_get_class" c:identifier="granite_widgets_storage_bar_item_description_get_class">
 		<return-value transfer-ownership="full" allow-none="1">
@@ -4447,13 +4403,13 @@
 			</parameter>
 		</parameters>
 	</function>
-	<class name="WidgetsTimePicker" c:type="GraniteWidgetsTimePicker" glib:type-name="GraniteWidgetsTimePicker" glib:get-type="granite_widgets_time_picker_get_type" glib:type-struct="WidgetsTimePickerClass" parent="Gtk.Entry">
+	<class name="WidgetsTimePicker" c:type="GraniteWidgetsTimePicker" glib:type-name="GraniteWidgetsTimePicker" glib:get-type="granite_widgets_time_picker_get_type" glib:type-struct="WidgetsTimePickerClass" parent="Gtk.Entry" c:symbol-prefix="widgets_time_picker">
 		<field name="parent_instance" readable="0" private="1">
 			<type name="Gtk.Entry" c:type="GtkEntry"/>
 		</field>
 		<glib:signal name="time-changed">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 		</glib:signal>
 		<property name="format-12" writable="1" construct-only="1">
@@ -4482,7 +4438,7 @@
 		</method>
 		<method name="set_time" c:identifier="granite_widgets_time_picker_set_time">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -4505,7 +4461,7 @@
 		</constructor>
 		<method name="position_dropdown" c:identifier="granite_widgets_time_picker_position_dropdown" deprecated="1" deprecated-version="5.2.0">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="x" direction="out" transfer-ownership="full">
@@ -4518,7 +4474,7 @@
 		</method>
 		<virtual-method name="position_dropdown" invoker="position_dropdown" deprecated="1" deprecated-version="5.2.0">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="x" direction="out" transfer-ownership="full">
@@ -4545,7 +4501,7 @@
 		<field name="position_dropdown" deprecated="1" deprecated-version="5.2.0">
 			<callback name="position_dropdown" c:type="position_dropdown">
 				<return-value transfer-ownership="full">
-					<type name="none"/>
+					<type name="none" c:type="void"/>
 				</return-value>
 				<parameters>
 					<parameter name="self" transfer-ownership="none">
@@ -4562,18 +4518,18 @@
 		</field>
 	</record>
 	<record name="WidgetsTimePickerPrivate" c:type="GraniteWidgetsTimePickerPrivate" disguised="1"/>
-	<class name="WidgetsToast" c:type="GraniteWidgetsToast" glib:type-name="GraniteWidgetsToast" glib:get-type="granite_widgets_toast_get_type" glib:type-struct="WidgetsToastClass" parent="Gtk.Revealer">
+	<class name="WidgetsToast" c:type="GraniteWidgetsToast" glib:type-name="GraniteWidgetsToast" glib:get-type="granite_widgets_toast_get_type" glib:type-struct="WidgetsToastClass" parent="Gtk.Revealer" c:symbol-prefix="widgets_toast">
 		<field name="parent_instance" readable="0" private="1">
 			<type name="Gtk.Revealer" c:type="GtkRevealer"/>
 		</field>
 		<glib:signal name="closed">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 		</glib:signal>
 		<glib:signal name="default-action">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 		</glib:signal>
 		<property name="title" writable="1" construct="1">
@@ -4586,7 +4542,7 @@
 		</method>
 		<method name="set_title" c:identifier="granite_widgets_toast_set_title">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -4606,7 +4562,7 @@
 		</constructor>
 		<method name="set_default_action" c:identifier="granite_widgets_toast_set_default_action">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="label" transfer-ownership="none" allow-none="1">
@@ -4616,7 +4572,7 @@
 		</method>
 		<method name="send_notification" c:identifier="granite_widgets_toast_send_notification">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 		</method>
 		<field name="priv" readable="0" private="1">
@@ -4629,7 +4585,7 @@
 		</field>
 	</record>
 	<record name="WidgetsToastPrivate" c:type="GraniteWidgetsToastPrivate" disguised="1"/>
-	<class name="WidgetsWelcomeButton" c:type="GraniteWidgetsWelcomeButton" glib:type-name="GraniteWidgetsWelcomeButton" glib:get-type="granite_widgets_welcome_button_get_type" glib:type-struct="WidgetsWelcomeButtonClass" parent="Gtk.Button">
+	<class name="WidgetsWelcomeButton" c:type="GraniteWidgetsWelcomeButton" glib:type-name="GraniteWidgetsWelcomeButton" glib:get-type="granite_widgets_welcome_button_get_type" glib:type-struct="WidgetsWelcomeButtonClass" parent="Gtk.Button" c:symbol-prefix="widgets_welcome_button">
 		<field name="parent_instance" readable="0" private="1">
 			<type name="Gtk.Button" c:type="GtkButton"/>
 		</field>
@@ -4643,7 +4599,7 @@
 		</method>
 		<method name="set_title" c:identifier="granite_widgets_welcome_button_set_title">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -4661,7 +4617,7 @@
 		</method>
 		<method name="set_description" c:identifier="granite_widgets_welcome_button_set_description">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -4679,7 +4635,7 @@
 		</method>
 		<method name="set_icon" c:identifier="granite_widgets_welcome_button_set_icon">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none" allow-none="1">
@@ -4713,13 +4669,13 @@
 		</field>
 	</record>
 	<record name="WidgetsWelcomeButtonPrivate" c:type="GraniteWidgetsWelcomeButtonPrivate" disguised="1"/>
-	<class name="WidgetsWelcome" c:type="GraniteWidgetsWelcome" glib:type-name="GraniteWidgetsWelcome" glib:get-type="granite_widgets_welcome_get_type" glib:type-struct="WidgetsWelcomeClass" parent="Gtk.EventBox">
+	<class name="WidgetsWelcome" c:type="GraniteWidgetsWelcome" glib:type-name="GraniteWidgetsWelcome" glib:get-type="granite_widgets_welcome_get_type" glib:type-struct="WidgetsWelcomeClass" parent="Gtk.EventBox" c:symbol-prefix="widgets_welcome">
 		<field name="parent_instance" readable="0" private="1">
 			<type name="Gtk.EventBox" c:type="GtkEventBox"/>
 		</field>
 		<glib:signal name="activated">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="index" transfer-ownership="none">
@@ -4745,7 +4701,7 @@
 		</method>
 		<method name="set_title" c:identifier="granite_widgets_welcome_set_title">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -4763,7 +4719,7 @@
 		</method>
 		<method name="set_subtitle" c:identifier="granite_widgets_welcome_set_subtitle">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -4786,7 +4742,7 @@
 		</constructor>
 		<method name="set_item_visible" c:identifier="granite_widgets_welcome_set_item_visible">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="index" transfer-ownership="none">
@@ -4799,7 +4755,7 @@
 		</method>
 		<method name="remove_item" c:identifier="granite_widgets_welcome_remove_item">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="index" transfer-ownership="none">
@@ -4809,7 +4765,7 @@
 		</method>
 		<method name="set_item_sensitivity" c:identifier="granite_widgets_welcome_set_item_sensitivity">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="index" transfer-ownership="none">
@@ -4888,11 +4844,11 @@
 		</field>
 	</record>
 	<record name="WidgetsWelcomePrivate" c:type="GraniteWidgetsWelcomePrivate" disguised="1"/>
-	<interface name="WidgetsSourceListSortable" c:type="GraniteWidgetsSourceListSortable" glib:type-name="GraniteWidgetsSourceListSortable" glib:get-type="granite_widgets_source_list_sortable_get_type" glib:type-struct="WidgetsSourceListSortableIface">
+	<interface name="WidgetsSourceListSortable" c:type="GraniteWidgetsSourceListSortable" glib:type-name="GraniteWidgetsSourceListSortable" glib:get-type="granite_widgets_source_list_sortable_get_type" glib:type-struct="WidgetsSourceListSortableIface" c:symbol-prefix="widgets_source_list_sortable">
 		<prerequisite name="Granite.WidgetsSourceListExpandableItem"/>
 		<glib:signal name="user-moved-item">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="moved" transfer-ownership="none">
@@ -4972,7 +4928,7 @@
 			</callback>
 		</field>
 	</record>
-	<interface name="WidgetsSourceListDragSource" c:type="GraniteWidgetsSourceListDragSource" glib:type-name="GraniteWidgetsSourceListDragSource" glib:get-type="granite_widgets_source_list_drag_source_get_type" glib:type-struct="WidgetsSourceListDragSourceIface">
+	<interface name="WidgetsSourceListDragSource" c:type="GraniteWidgetsSourceListDragSource" glib:type-name="GraniteWidgetsSourceListDragSource" glib:get-type="granite_widgets_source_list_drag_source_get_type" glib:type-struct="WidgetsSourceListDragSourceIface" c:symbol-prefix="widgets_source_list_drag_source">
 		<prerequisite name="Granite.WidgetsSourceListItem"/>
 		<method name="draggable" c:identifier="granite_widgets_source_list_drag_source_draggable">
 			<return-value transfer-ownership="full">
@@ -4986,7 +4942,7 @@
 		</virtual-method>
 		<method name="prepare_selection_data" c:identifier="granite_widgets_source_list_drag_source_prepare_selection_data">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="selection_data" transfer-ownership="none">
@@ -4996,7 +4952,7 @@
 		</method>
 		<virtual-method name="prepare_selection_data" invoker="prepare_selection_data">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="selection_data" transfer-ownership="none">
@@ -5024,7 +4980,7 @@
 		<field name="prepare_selection_data">
 			<callback name="prepare_selection_data" c:type="prepare_selection_data">
 				<return-value transfer-ownership="full">
-					<type name="none"/>
+					<type name="none" c:type="void"/>
 				</return-value>
 				<parameters>
 					<parameter name="self" transfer-ownership="none">
@@ -5037,7 +4993,7 @@
 			</callback>
 		</field>
 	</record>
-	<interface name="WidgetsSourceListDragDest" c:type="GraniteWidgetsSourceListDragDest" glib:type-name="GraniteWidgetsSourceListDragDest" glib:get-type="granite_widgets_source_list_drag_dest_get_type" glib:type-struct="WidgetsSourceListDragDestIface">
+	<interface name="WidgetsSourceListDragDest" c:type="GraniteWidgetsSourceListDragDest" glib:type-name="GraniteWidgetsSourceListDragDest" glib:get-type="granite_widgets_source_list_drag_dest_get_type" glib:type-struct="WidgetsSourceListDragDestIface" c:symbol-prefix="widgets_source_list_drag_dest">
 		<prerequisite name="Granite.WidgetsSourceListItem"/>
 		<method name="data_drop_possible" c:identifier="granite_widgets_source_list_drag_dest_data_drop_possible">
 			<return-value transfer-ownership="full">
@@ -5135,11 +5091,11 @@
 	</record>
 	<function name="widgets_show_about_dialog" c:identifier="granite_widgets_show_about_dialog" introspectable="0">
 		<return-value transfer-ownership="full">
-			<type name="none"/>
+			<type name="none" c:type="void"/>
 		</return-value>
 		<parameters>
 			<parameter name="parent" transfer-ownership="none" allow-none="1">
-				<type name="gpointer" c:type="GtkWindow*"/>
+				<type name="Gtk.Window" c:type="GtkWindow*"/>
 			</parameter>
 			<parameter name="first" transfer-ownership="none">
 				<type name="utf8" c:type="const gchar*"/>
@@ -5178,15 +5134,11 @@
 		<member name="left" c:identifier="GRANITE_CLOSE_BUTTON_POSITION_LEFT" value="0"/>
 		<member name="right" c:identifier="GRANITE_CLOSE_BUTTON_POSITION_RIGHT" value="1"/>
 	</enumeration>
-	<class name="Application" c:type="GraniteApplication" glib:type-name="GraniteApplication" glib:get-type="granite_application_get_type" glib:type-struct="ApplicationClass" parent="Gtk.Application" abstract="1" deprecated="1" deprecated-version="0.5.0">
+	<class name="Application" c:type="GraniteApplication" glib:type-name="GraniteApplication" glib:get-type="granite_application_get_type" glib:type-struct="ApplicationClass" parent="Gtk.Application" abstract="1" deprecated="1" deprecated-version="0.5.0" c:symbol-prefix="application">
 		<field name="parent_instance" readable="0" private="1">
 			<type name="Gtk.Application" c:type="GtkApplication"/>
 		</field>
-		<constant name="options" c:identifier="GRANITE_APPLICATION_options" value="(null)">
-			<array c:type="GOptionEntry*">
-				<type name="GLib.OptionEntry" c:type="GOptionEntry"/>
-			</array>
-		</constant>
+		
 		<field name="build_data_dir">
 			<type name="utf8" c:type="gchar*"/>
 		</field>
@@ -5288,12 +5240,12 @@
 		</field>
 		<method name="set_options" c:identifier="granite_application_set_options">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 		</method>
 		<virtual-method name="set_options" invoker="set_options">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 		</virtual-method>
 		<method name="create_appmenu" c:identifier="granite_application_create_appmenu" deprecated="1" deprecated-version="0.4.2">
@@ -5311,7 +5263,7 @@
 		</field>
 		<method name="show_about" c:identifier="granite_application_show_about" deprecated="1" deprecated-version="0.4.2">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="parent" transfer-ownership="none">
@@ -5321,7 +5273,7 @@
 		</method>
 		<virtual-method name="show_about" invoker="show_about" deprecated="1" deprecated-version="0.4.2">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="parent" transfer-ownership="none">
@@ -5340,7 +5292,7 @@
 		<field name="set_options">
 			<callback name="set_options" c:type="set_options">
 				<return-value transfer-ownership="full">
-					<type name="none"/>
+					<type name="none" c:type="void"/>
 				</return-value>
 				<parameters>
 					<parameter name="self" transfer-ownership="none">
@@ -5352,7 +5304,7 @@
 		<field name="show_about" deprecated="1" deprecated-version="0.4.2">
 			<callback name="show_about" c:type="show_about">
 				<return-value transfer-ownership="full">
-					<type name="none"/>
+					<type name="none" c:type="void"/>
 				</return-value>
 				<parameters>
 					<parameter name="self" transfer-ownership="none">
@@ -5366,7 +5318,7 @@
 		</field>
 	</record>
 	<record name="ApplicationPrivate" c:type="GraniteApplicationPrivate" disguised="1"/>
-	<class name="SettingsPage" c:type="GraniteSettingsPage" glib:type-name="GraniteSettingsPage" glib:get-type="granite_settings_page_get_type" glib:type-struct="SettingsPageClass" parent="Gtk.ScrolledWindow" abstract="1">
+	<class name="SettingsPage" c:type="GraniteSettingsPage" glib:type-name="GraniteSettingsPage" glib:get-type="granite_settings_page_get_type" glib:type-struct="SettingsPageClass" parent="Gtk.ScrolledWindow" abstract="1" c:symbol-prefix="settings_page">
 		<field name="parent_instance" readable="0" private="1">
 			<type name="Gtk.ScrolledWindow" c:type="GtkScrolledWindow"/>
 		</field>
@@ -5386,7 +5338,7 @@
 		</method>
 		<method name="set_status_type" c:identifier="granite_settings_page_set_status_type">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -5420,7 +5372,7 @@
 		</method>
 		<method name="set_status" c:identifier="granite_settings_page_set_status">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -5438,7 +5390,7 @@
 		</method>
 		<method name="set_icon_name" c:identifier="granite_settings_page_set_icon_name">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none" allow-none="1">
@@ -5456,7 +5408,7 @@
 		</method>
 		<method name="set_title" c:identifier="granite_settings_page_set_title">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -5481,7 +5433,7 @@
 		<member name="warning" c:identifier="GRANITE_SETTINGS_PAGE_STATUS_TYPE_WARNING" value="3"/>
 		<member name="none" c:identifier="GRANITE_SETTINGS_PAGE_STATUS_TYPE_NONE" value="4"/>
 	</enumeration>
-	<class name="SimpleSettingsPage" c:type="GraniteSimpleSettingsPage" glib:type-name="GraniteSimpleSettingsPage" glib:get-type="granite_simple_settings_page_get_type" glib:type-struct="SimpleSettingsPageClass" parent="Granite.SettingsPage" abstract="1">
+	<class name="SimpleSettingsPage" c:type="GraniteSimpleSettingsPage" glib:type-name="GraniteSimpleSettingsPage" glib:get-type="granite_simple_settings_page_get_type" glib:type-struct="SimpleSettingsPageClass" parent="Granite.SettingsPage" abstract="1" c:symbol-prefix="simple_settings_page">
 		<field name="parent_instance" readable="0" private="1">
 			<type name="Granite.SettingsPage" c:type="GraniteSettingsPage"/>
 		</field>
@@ -5527,7 +5479,7 @@
 		</method>
 		<method name="set_description" c:identifier="granite_simple_settings_page_set_description">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -5545,7 +5497,7 @@
 		</method>
 		<method name="set_icon_name" c:identifier="granite_simple_settings_page_set_icon_name">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -5563,7 +5515,7 @@
 		</method>
 		<method name="set_title" c:identifier="granite_simple_settings_page_set_title">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -5581,7 +5533,7 @@
 		</field>
 	</record>
 	<record name="SimpleSettingsPagePrivate" c:type="GraniteSimpleSettingsPagePrivate" disguised="1"/>
-	<class name="AccelLabel" c:type="GraniteAccelLabel" glib:type-name="GraniteAccelLabel" glib:get-type="granite_accel_label_get_type" glib:type-struct="AccelLabelClass" parent="Gtk.Grid">
+	<class name="AccelLabel" c:type="GraniteAccelLabel" glib:type-name="GraniteAccelLabel" glib:get-type="granite_accel_label_get_type" glib:type-struct="AccelLabelClass" parent="Gtk.Grid" c:symbol-prefix="accel_label">
 		<field name="parent_instance" readable="0" private="1">
 			<type name="Gtk.Grid" c:type="GtkGrid"/>
 		</field>
@@ -5595,7 +5547,7 @@
 		</method>
 		<method name="set_action_name" c:identifier="granite_accel_label_set_action_name">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -5613,7 +5565,7 @@
 		</method>
 		<method name="set_accel_string" c:identifier="granite_accel_label_set_accel_string">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none" allow-none="1">
@@ -5631,7 +5583,7 @@
 		</method>
 		<method name="set_label" c:identifier="granite_accel_label_set_label">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -5675,7 +5627,7 @@
 		</field>
 	</record>
 	<record name="AccelLabelPrivate" c:type="GraniteAccelLabelPrivate" disguised="1"/>
-	<class name="AsyncImage" c:type="GraniteAsyncImage" glib:type-name="GraniteAsyncImage" glib:get-type="granite_async_image_get_type" glib:type-struct="AsyncImageClass" parent="Gtk.Image">
+	<class name="AsyncImage" c:type="GraniteAsyncImage" glib:type-name="GraniteAsyncImage" glib:get-type="granite_async_image_get_type" glib:type-struct="AsyncImageClass" parent="Gtk.Image" c:symbol-prefix="async_image">
 		<field name="parent_instance" readable="0" private="1">
 			<type name="Gtk.Image" c:type="GtkImage"/>
 		</field>
@@ -5754,7 +5706,7 @@
 		</constructor>
 		<method name="set_from_gicon_async" c:identifier="granite_async_image_set_from_gicon_async">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="icon" transfer-ownership="none">
@@ -5776,7 +5728,7 @@
 		</method>
 		<method name="set_from_gicon_finish" c:identifier="granite_async_image_set_from_gicon_finish" throws="1">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="_res_" transfer-ownership="none">
@@ -5786,7 +5738,7 @@
 		</method>
 		<method name="set_from_icon_name_async" c:identifier="granite_async_image_set_from_icon_name_async">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="icon_name" transfer-ownership="none">
@@ -5808,7 +5760,7 @@
 		</method>
 		<method name="set_from_icon_name_finish" c:identifier="granite_async_image_set_from_icon_name_finish" throws="1">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="_res_" transfer-ownership="none">
@@ -5818,7 +5770,7 @@
 		</method>
 		<method name="set_from_file_async" c:identifier="granite_async_image_set_from_file_async">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="file" transfer-ownership="none">
@@ -5846,7 +5798,7 @@
 		</method>
 		<method name="set_from_file_finish" c:identifier="granite_async_image_set_from_file_finish" throws="1">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="_res_" transfer-ownership="none">
@@ -5864,7 +5816,7 @@
 		</field>
 	</record>
 	<record name="AsyncImagePrivate" c:type="GraniteAsyncImagePrivate" disguised="1"/>
-	<class name="HeaderLabel" c:type="GraniteHeaderLabel" glib:type-name="GraniteHeaderLabel" glib:get-type="granite_header_label_get_type" glib:type-struct="HeaderLabelClass" parent="Gtk.Label">
+	<class name="HeaderLabel" c:type="GraniteHeaderLabel" glib:type-name="GraniteHeaderLabel" glib:get-type="granite_header_label_get_type" glib:type-struct="HeaderLabelClass" parent="Gtk.Label" c:symbol-prefix="header_label">
 		<field name="parent_instance" readable="0" private="1">
 			<type name="Gtk.Label" c:type="GtkLabel"/>
 		</field>
@@ -5888,7 +5840,7 @@
 		</field>
 	</record>
 	<record name="HeaderLabelPrivate" c:type="GraniteHeaderLabelPrivate" disguised="1"/>
-	<class name="MessageDialog" c:type="GraniteMessageDialog" glib:type-name="GraniteMessageDialog" glib:get-type="granite_message_dialog_get_type" glib:type-struct="MessageDialogClass" parent="Gtk.Dialog">
+	<class name="MessageDialog" c:type="GraniteMessageDialog" glib:type-name="GraniteMessageDialog" glib:get-type="granite_message_dialog_get_type" glib:type-struct="MessageDialogClass" parent="Gtk.Dialog" c:symbol-prefix="message_dialog">
 		<field name="parent_instance" readable="0" private="1">
 			<type name="Gtk.Dialog" c:type="GtkDialog"/>
 		</field>
@@ -5902,7 +5854,7 @@
 		</method>
 		<method name="set_primary_text" c:identifier="granite_message_dialog_set_primary_text">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -5920,7 +5872,7 @@
 		</method>
 		<method name="set_secondary_text" c:identifier="granite_message_dialog_set_secondary_text">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -5938,7 +5890,7 @@
 		</method>
 		<method name="set_image_icon" c:identifier="granite_message_dialog_set_image_icon">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -5956,7 +5908,7 @@
 		</method>
 		<method name="set_badge_icon" c:identifier="granite_message_dialog_set_badge_icon">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -6031,7 +5983,7 @@
 		</constructor>
 		<method name="show_error_details" c:identifier="granite_message_dialog_show_error_details">
 			<return-value transfer-ownership="full">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="error_message" transfer-ownership="none">
@@ -6049,7 +6001,7 @@
 		</field>
 	</record>
 	<record name="MessageDialogPrivate" c:type="GraniteMessageDialogPrivate" disguised="1"/>
-	<class name="ModeSwitch" c:type="GraniteModeSwitch" glib:type-name="GraniteModeSwitch" glib:get-type="granite_mode_switch_get_type" glib:type-struct="ModeSwitchClass" parent="Gtk.Grid">
+	<class name="ModeSwitch" c:type="GraniteModeSwitch" glib:type-name="GraniteModeSwitch" glib:get-type="granite_mode_switch_get_type" glib:type-struct="ModeSwitchClass" parent="Gtk.Grid" c:symbol-prefix="mode_switch">
 		<field name="parent_instance" readable="0" private="1">
 			<type name="Gtk.Grid" c:type="GtkGrid"/>
 		</field>
@@ -6063,7 +6015,7 @@
 		</method>
 		<method name="set_active" c:identifier="granite_mode_switch_set_active">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -6081,7 +6033,7 @@
 		</method>
 		<method name="set_primary_icon_gicon" c:identifier="granite_mode_switch_set_primary_icon_gicon">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -6099,7 +6051,7 @@
 		</method>
 		<method name="set_primary_icon_name" c:identifier="granite_mode_switch_set_primary_icon_name">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -6117,7 +6069,7 @@
 		</method>
 		<method name="set_primary_icon_tooltip_text" c:identifier="granite_mode_switch_set_primary_icon_tooltip_text">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -6135,7 +6087,7 @@
 		</method>
 		<method name="set_secondary_icon_gicon" c:identifier="granite_mode_switch_set_secondary_icon_gicon">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -6153,7 +6105,7 @@
 		</method>
 		<method name="set_secondary_icon_name" c:identifier="granite_mode_switch_set_secondary_icon_name">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -6171,7 +6123,7 @@
 		</method>
 		<method name="set_secondary_icon_tooltip_text" c:identifier="granite_mode_switch_set_secondary_icon_tooltip_text">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -6215,7 +6167,7 @@
 		</field>
 	</record>
 	<record name="ModeSwitchPrivate" c:type="GraniteModeSwitchPrivate" disguised="1"/>
-	<class name="SeekBar" c:type="GraniteSeekBar" glib:type-name="GraniteSeekBar" glib:get-type="granite_seek_bar_get_type" glib:type-struct="SeekBarClass" parent="Gtk.Grid">
+	<class name="SeekBar" c:type="GraniteSeekBar" glib:type-name="GraniteSeekBar" glib:get-type="granite_seek_bar_get_type" glib:type-struct="SeekBarClass" parent="Gtk.Grid" c:symbol-prefix="seek_bar">
 		<field name="parent_instance" readable="0" private="1">
 			<type name="Gtk.Grid" c:type="GtkGrid"/>
 		</field>
@@ -6229,7 +6181,7 @@
 		</method>
 		<method name="set_playback_duration" c:identifier="granite_seek_bar_set_playback_duration">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -6247,7 +6199,7 @@
 		</method>
 		<method name="set_playback_progress" c:identifier="granite_seek_bar_set_playback_progress">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -6281,7 +6233,7 @@
 		</method>
 		<method name="set_progression_label" c:identifier="granite_seek_bar_set_progression_label">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -6299,7 +6251,7 @@
 		</method>
 		<method name="set_duration_label" c:identifier="granite_seek_bar_set_duration_label">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -6317,7 +6269,7 @@
 		</method>
 		<method name="set_scale" c:identifier="granite_seek_bar_set_scale">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none">
@@ -6345,7 +6297,7 @@
 		</field>
 	</record>
 	<record name="SeekBarPrivate" c:type="GraniteSeekBarPrivate" disguised="1"/>
-	<class name="Settings" c:type="GraniteSettings" glib:type-name="GraniteSettings" glib:get-type="granite_settings_get_type" glib:type-struct="SettingsClass" parent="GObject.Object">
+	<class name="Settings" c:type="GraniteSettings" glib:type-name="GraniteSettings" glib:get-type="granite_settings_get_type" glib:type-struct="SettingsClass" parent="GObject.Object" c:symbol-prefix="settings">
 		<field name="parent_instance" readable="0" private="1">
 			<type name="GObject.Object" c:type="GObject"/>
 		</field>
@@ -6377,7 +6329,7 @@
 		<member name="dark" c:identifier="GRANITE_SETTINGS_COLOR_SCHEME_DARK" value="1"/>
 		<member name="light" c:identifier="GRANITE_SETTINGS_COLOR_SCHEME_LIGHT" value="2"/>
 	</enumeration>
-	<class name="SettingsSidebar" c:type="GraniteSettingsSidebar" glib:type-name="GraniteSettingsSidebar" glib:get-type="granite_settings_sidebar_get_type" glib:type-struct="SettingsSidebarClass" parent="Gtk.ScrolledWindow">
+	<class name="SettingsSidebar" c:type="GraniteSettingsSidebar" glib:type-name="GraniteSettingsSidebar" glib:get-type="granite_settings_sidebar_get_type" glib:type-struct="SettingsSidebarClass" parent="Gtk.ScrolledWindow" c:symbol-prefix="settings_sidebar">
 		<field name="parent_instance" readable="0" private="1">
 			<type name="Gtk.ScrolledWindow" c:type="GtkScrolledWindow"/>
 		</field>
@@ -6399,7 +6351,7 @@
 		</method>
 		<method name="set_visible_child_name" c:identifier="granite_settings_sidebar_set_visible_child_name">
 			<return-value transfer-ownership="none">
-				<type name="none"/>
+				<type name="none" c:type="void"/>
 			</return-value>
 			<parameters>
 				<parameter name="value" transfer-ownership="none" allow-none="1">
@@ -6429,75 +6381,31 @@
 	<record name="SettingsSidebarPrivate" c:type="GraniteSettingsSidebarPrivate" disguised="1"/>
 	<callback name="WidgetsDroppedDelegate" c:type="GraniteWidgetsDroppedDelegate">
 		<return-value transfer-ownership="full">
-			<type name="none"/>
+			<type name="none" c:type="void"/>
 		</return-value>
 	</callback>
-	<constant name="STYLE_CLASS_ACCENT" c:identifier="GRANITE_STYLE_CLASS_ACCENT" value="accent">
-		<type name="utf8" c:type="const gchar*"/>
-	</constant>
-	<constant name="STYLE_CLASS_AVATAR" c:identifier="GRANITE_STYLE_CLASS_AVATAR" value="avatar">
-		<type name="utf8" c:type="const gchar*"/>
-	</constant>
-	<constant name="STYLE_CLASS_BACK_BUTTON" c:identifier="GRANITE_STYLE_CLASS_BACK_BUTTON" value="back-button">
-		<type name="utf8" c:type="const gchar*"/>
-	</constant>
-	<constant name="STYLE_CLASS_BADGE" c:identifier="GRANITE_STYLE_CLASS_BADGE" value="badge">
-		<type name="utf8" c:type="const gchar*"/>
-	</constant>
-	<constant name="STYLE_CLASS_CARD" c:identifier="GRANITE_STYLE_CLASS_CARD" value="card">
-		<type name="utf8" c:type="const gchar*"/>
-	</constant>
-	<constant name="STYLE_CLASS_CATEGORY_EXPANDER" c:identifier="GRANITE_STYLE_CLASS_CATEGORY_EXPANDER" value="category-expander">
-		<type name="utf8" c:type="const gchar*"/>
-	</constant>
-	<constant name="STYLE_CLASS_CHECKERBOARD" c:identifier="GRANITE_STYLE_CLASS_CHECKERBOARD" value="checkerboard">
-		<type name="utf8" c:type="const gchar*"/>
-	</constant>
-	<constant name="STYLE_CLASS_COLOR_BUTTON" c:identifier="GRANITE_STYLE_CLASS_COLOR_BUTTON" value="color-button">
-		<type name="utf8" c:type="const gchar*"/>
-	</constant>
-	<constant name="STYLE_CLASS_H1_LABEL" c:identifier="GRANITE_STYLE_CLASS_H1_LABEL" value="h1">
-		<type name="utf8" c:type="const gchar*"/>
-	</constant>
-	<constant name="STYLE_CLASS_H2_LABEL" c:identifier="GRANITE_STYLE_CLASS_H2_LABEL" value="h2">
-		<type name="utf8" c:type="const gchar*"/>
-	</constant>
-	<constant name="STYLE_CLASS_H3_LABEL" c:identifier="GRANITE_STYLE_CLASS_H3_LABEL" value="h3">
-		<type name="utf8" c:type="const gchar*"/>
-	</constant>
-	<constant name="STYLE_CLASS_H4_LABEL" c:identifier="GRANITE_STYLE_CLASS_H4_LABEL" value="h4">
-		<type name="utf8" c:type="const gchar*"/>
-	</constant>
-	<constant name="STYLE_CLASS_KEYCAP" c:identifier="GRANITE_STYLE_CLASS_KEYCAP" value="keycap">
-		<type name="utf8" c:type="const gchar*"/>
-	</constant>
-	<constant name="STYLE_CLASS_MODE_SWITCH" c:identifier="GRANITE_STYLE_CLASS_MODE_SWITCH" value="mode-switch">
-		<type name="utf8" c:type="const gchar*"/>
-	</constant>
-	<constant name="STYLE_CLASS_OVERLAY_BAR" c:identifier="GRANITE_STYLE_CLASS_OVERLAY_BAR" value="overlay-bar">
-		<type name="utf8" c:type="const gchar*"/>
-	</constant>
-	<constant name="STYLE_CLASS_PRIMARY_LABEL" c:identifier="GRANITE_STYLE_CLASS_PRIMARY_LABEL" value="primary">
-		<type name="utf8" c:type="const gchar*"/>
-	</constant>
-	<constant name="STYLE_CLASS_ROUNDED" c:identifier="GRANITE_STYLE_CLASS_ROUNDED" value="rounded">
-		<type name="utf8" c:type="const gchar*"/>
-	</constant>
-	<constant name="STYLE_CLASS_SEEKBAR" c:identifier="GRANITE_STYLE_CLASS_SEEKBAR" value="seek-bar">
-		<type name="utf8" c:type="const gchar*"/>
-	</constant>
-	<constant name="STYLE_CLASS_SOURCE_LIST" c:identifier="GRANITE_STYLE_CLASS_SOURCE_LIST" value="source-list">
-		<type name="utf8" c:type="const gchar*"/>
-	</constant>
-	<constant name="STYLE_CLASS_STORAGEBAR" c:identifier="GRANITE_STYLE_CLASS_STORAGEBAR" value="storage-bar">
-		<type name="utf8" c:type="const gchar*"/>
-	</constant>
-	<constant name="STYLE_CLASS_TERMINAL" c:identifier="GRANITE_STYLE_CLASS_TERMINAL" value="terminal">
-		<type name="utf8" c:type="const gchar*"/>
-	</constant>
-	<constant name="STYLE_CLASS_WELCOME" c:identifier="GRANITE_STYLE_CLASS_WELCOME" value="welcome">
-		<type name="utf8" c:type="const gchar*"/>
-	</constant>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	<function name="accel_to_string" c:identifier="granite_accel_to_string">
 		<return-value transfer-ownership="full">
 			<type name="utf8" c:type="gchar*"/>
@@ -6528,7 +6436,7 @@
 	</function>
 	<function name="contrasting_foreground_color" c:identifier="granite_contrasting_foreground_color">
 		<return-value transfer-ownership="none">
-			<type name="none"/>
+			<type name="none" c:type="void"/>
 		</return-value>
 		<parameters>
 			<parameter name="bg_color" transfer-ownership="none">
@@ -6539,5 +6447,17 @@
 			</parameter>
 		</parameters>
 	</function>
-</namespace>
+<callback name="WidgetsSourceListVisibleFunc" c:type="GraniteWidgetsSourceListVisibleFunc">
+			<return-value transfer-ownership="full">
+				<type name="gboolean" c:type="gboolean"/>
+			</return-value>
+			<parameters>
+				<parameter name="item" transfer-ownership="none">
+					<type name="Granite.WidgetsSourceListItem" c:type="GraniteWidgetsSourceListItem*"/>
+				</parameter>
+				<parameter name="user_data" transfer-ownership="none" closure="1">
+					<type name="gpointer" c:type="void*"/>
+				</parameter>
+			</parameters>
+		</callback></namespace>
 </repository>

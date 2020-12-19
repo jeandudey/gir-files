@@ -137,7 +137,7 @@ xmlstarlet ed -P -L \
 	-u '//_:class[@name="WaylandSurface"]/_:method[@name="get_wl_surface"]//_:type[@name="gpointer"]/@c:type' -v "gpointer" \
 	GdkWayland-4.0.gir
 
- Fix almost all
+# Fix almost all
 xmlstarlet ed -P -L \
 	-a '//_:class[@name="AbstractBidirList"]' -t "attr" -n "c:symbol-prefix" -v "abstract_bidir_list" \
     -d '///_:method/_:return-value/_:type/_:type[@name="gpointer" and @c:type="gpointer"]' \
